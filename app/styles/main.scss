@@ -28,6 +28,7 @@ $bold-24h-headline: 'Open Sans Condensed', sans-serif;
 //general, fonts
 
 body{
+  color: white;
   background-color: $dark-gray;
   font-family: $body-font-family;
 }
@@ -36,6 +37,10 @@ body{
   font-family: $body-font-family;
   font-size: 20px;
   padding: 0 60px;
+}
+
+h1, h2, h3, h4 {
+  font-family: $headline-font-family;
 }
 
 // general containers
@@ -252,4 +257,23 @@ body{
 
 #specs{
   background-color: $dark-gray;
+
+  h4{
+    font-size: 30px;
+  }
+
+  p{
+    font-size: 18px;
+    padding: 30px 30px;
+    font-weight: 100;
+    text-align: left;
+  }
+
+  .specs-icon{
+    height: 75px;
+  }
+}
+
+#apply {
+  background-color: $darker-gray;
 }
