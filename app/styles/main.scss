@@ -226,6 +226,9 @@ body{
 }
 
 // tracks
+#tracks, .dotted-image{
+  background-color: $darker-gray;
+}
 
 #tracks .row:first-child {
   margin-bottom: 30px;
@@ -242,6 +245,11 @@ body{
   max-width: 262.5px;
 }
 
+.track-to-hack{
+  margin-top: 30px;
+  color: white;
+}
+
 #specs{
-  background-color: $darker-gray;
+  background-color: $dark-gray;
 }
