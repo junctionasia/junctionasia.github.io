@@ -38,6 +38,12 @@ body{
   padding: 0 60px;
 }
 
+// general containers
+
+.content-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
 // general buttons
 
@@ -213,6 +219,12 @@ body{
   }
 }
 
+.dotted-image{
+  width: 100%;
+  height: 200px;
+  background: url('../images/svg_dots_top.svg') no-repeat;
+}
+
 // tracks
 
 #tracks .row:first-child {
@@ -230,52 +242,6 @@ body{
   max-width: 262.5px;
 }
 
-
-.if{ 
-  background-color: $red ;
-  img{
-
-  }
-}
-.futurice{ 
-  background-color: $red ;
-  img{
-
-  }
-}
-.klarna{ 
-  background-color: $red ;
-  img{
-
-  }
-}
-.shopify{ 
-  background-color: $red ;
-  img{
-
-  }
-}
-.aero{ 
-  background-color: $red ;
-  img{
-
-  }
-}
-.uber{ 
-  background-color: $red ;
-  img{
-
-  }
-}
-.rails{ 
-  background-color:$red ;
-  img{
-
-  }
-}
-.aaltoes{ 
-  background-color: $red ;
-  img{
-
-  }
+#specs{
+  background-color: $darker-gray;
 }
