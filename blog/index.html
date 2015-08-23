@@ -3,14 +3,16 @@ layout: default
 ---
 
 <main role="main" class='blog-index'>
-  <div class="row">
-      <div class="col-xs-12">
-      {% for post in site.posts %}
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+        {% for post in site.posts %}
 
-        {% include post_single.html %}
+          {% include post_single.html %}
 
-      {% endfor %}
-      </div>
+        {% endfor %}
+        </div>
+    </div>
   </div>
 
 
