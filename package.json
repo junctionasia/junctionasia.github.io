@@ -28,5 +28,9 @@
   },
   "engines": {
     "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "bin-wrapper": "^3.0.2",
+    "lazy-req": "^1.1.0"
   }
 }
