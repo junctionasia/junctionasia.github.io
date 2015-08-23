@@ -1,6 +1,9 @@
+---
+---
+
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 //shades of gray
@@ -301,9 +304,13 @@ h1, h2, h3, h4 {
   }
 }
 
-footer{
+footer {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: $darker-gray;
+}
+
+.blog-index {
+  margin-top: 50px;
 }
