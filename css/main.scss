@@ -32,7 +32,7 @@ $bold-24h-headline: 'Open Sans Condensed', sans-serif;
 
 body{
   color: white;
-  background-color: $dark-gray;
+  background-color: $darker-gray;
   font-family: $body-font-family;
 }
 
@@ -207,7 +207,7 @@ h1, h2, h3, h4 {
 @media(min-width:$screen-xs-max) {
   .intro {
     height: 90vh;
-    margin-top: 10vh;
+    margin-top: 90px;
 
     .intro-body {
 
@@ -247,6 +247,7 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
+@media(min-width:$screen-xs-max){
 .dotted-image{
   width: 100%;
   height: 200px;
@@ -257,6 +258,7 @@ h1, h2, h3, h4 {
   width: 100%;
   height: 200px;
   background: url('../images/svg_dots_bottom.svg') no-repeat center bottom;
+}
 }
 
 // tracks
