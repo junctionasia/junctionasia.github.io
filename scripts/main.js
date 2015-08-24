@@ -22,3 +22,11 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+
+// Open modal when track is clicked
+$('.track-box').click(function(e){
+
+    var clickedTrack = e.target.className.split(" ")[1] //get the clicked element class (eq. klarna)
+    $('#' + clickedTrack + '-modal').modal('show')
+})
