@@ -13,9 +13,6 @@ github_username:  kekeblom
 # Build settings
 markdown: kramdown
 
-gems:
-  - octopress-autoprefixer
-
 exclude:
   - node_modules
   - test
