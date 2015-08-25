@@ -309,7 +309,56 @@ h1, h2, h3, h4 {
 }
 
 .modal-content{
-  color:black;
+  color:white;
+  padding: 30px 100px;
+
+  a, a:visited, a:hover, a:active{
+      color: white;
+      text-decoration: underline;
+  }
+
+  .track-box {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    display: block;
+  }
+
+  h2, h3{
+    text-align: center;
+    font-weight: 700;
+  }
+
+}
+
+
+
+
+
+#if-modal .modal-content{
+  background-color: #2b6ab8;
+}
+#futurice-modal .modal-content{
+  background-color: #518e40;
+}
+#klarna-modal .modal-content{
+  background-color: #2b6ab8;
+}
+#shopify-modal .modal-content{
+  background-color: #518e40;
+}
+#aero-modal .modal-content{
+  background-color: #e6e6e6;
+  color: black;
+}
+#uber-modal .modal-content{
+  background-color: #15183d;
+}
+#rails-modal .modal-content{
+  background-color: #bf3721;
+}
+#aaltoes-modal .modal-content{
+  background-color: black;
 }
 
 .track-to-hack{
