@@ -35,11 +35,8 @@ module.exports = function (grunt) {
         tasks: ['wiredep']
       },
       js: {
-        files: ['<%= config.app %>/scripts/{,*/}*.js'],
-        tasks: ['jshint'],
-        options: {
-          livereload: true
-        }
+        files: ['scripts/*.js'],
+        tasks: 'concat:js'
       },
       jstest: {
         files: ['test/spec/{,*/}*.js'],
@@ -308,9 +305,12 @@ module.exports = function (grunt) {
     //     }
     //   }
     // },
-    // concat: {
-    //   dist: {}
-    // },
+    concat: {
+      js: {
+        src: ['bower_components/velocity/velocity.js', 'scripts/*.js'],
+        dest: 'dist/build.js'
+      }
+    },
 
     // Copies remaining files to places other tasks can use
     copy: {

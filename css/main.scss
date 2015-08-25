@@ -70,6 +70,9 @@ h1, h2, h3, h4 {
 //navbar
 
 .navbar-custom {
+  .container {
+
+  }
   margin-bottom: 0;
   border-bottom: 1px solid transparentize($grayscale-light, 0.7);
   text-transform: uppercase;
@@ -180,17 +183,19 @@ h1, h2, h3, h4 {
     .junction-logo img {
       max-width: 300px;
 
-      @media screen and (max-width: $screen-md-max) {
+      @media screen and (max-width: $screen-xs-max) {
         & {
           display: block;
           margin-left: auto;
           margin-right: auto;
+          max-width: 200px;
         }
       }
     }
 
     .junction-text {
       margin: 50px auto;
+      width: 80%;
       max-width: 500px;
     }
 
@@ -204,6 +209,18 @@ h1, h2, h3, h4 {
       font-size: 19px;
     }
   }
+  .slushhacks{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* centering hack */
+    width: 80%;
+    max-width: 350px;
+
+    img {
+      width: 100%;
+    }
+  }
 }
 
 @media(min-width:$screen-xs-max) {
@@ -214,7 +231,7 @@ h1, h2, h3, h4 {
     .intro-body {
 
       .junction-text {
-        margin: 50px auto;
+        margin: 50px auto 75px auto;
         max-width: 500px;
       }
 
@@ -231,12 +248,6 @@ h1, h2, h3, h4 {
         }
 
       }
-      .slushhacks{
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        margin-left: -148px; /* centering hack */
-      }
     }
   }
 }
@@ -247,6 +258,11 @@ h1, h2, h3, h4 {
   background-color: $darker-gray;
   color: white;
   text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  h2 {
+    margin-top: 0;
+  }
 }
 
 @media(min-width:$screen-xs-max){
@@ -382,8 +398,14 @@ h1, h2, h3, h4 {
   background-color: $dark-gray;
   background: #1B1A17;
 
+  .content-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
   h4{
     font-size: 30px;
+    margin-top: 0;
   }
 
   p{
@@ -444,15 +466,17 @@ $apply-color-hover: #EFEA3A;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  height: 50px;
-  line-height: 42px;
-  padding: 0 25px;
-  font-size: 16px;
+  height: 65px;
+  line-height: 53px;
+  padding: 0 55px;
+  font-size: 32px;
+  margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.6);
   border: 3px solid $apply-color;
   border-radius: 2px;
 
-  transition: all 0.2s ease-in;
+  transition: color 0.2s ease-in, background 0.2s ease-in,
+    border-color 0.2s ease-in;
 
   &:hover, &:active {
     color: $apply-color-hover;
@@ -469,11 +493,6 @@ $apply-color-hover: #EFEA3A;
   background: $apply-color;
   border-color: $apply-color;
   font-weight: bold;
-  font-size: 25px;
-  padding: 0 30px;
-  height: 60px;
-  line-height: 50px;
-
 
   &:hover {
     background: $apply-color-hover;

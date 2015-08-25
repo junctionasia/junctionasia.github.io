@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var API_ENDPOINT = 'http://junction.aaltoes.com/register';
 
   var form = document.querySelector('#registration-form');
+  if (!form) return;
 
   var getData = function() {
     var data = {};
