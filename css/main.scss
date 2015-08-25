@@ -112,8 +112,6 @@ h1, h2, h3, h4 {
       }
 
       a {
-        -webkit-transition: background .3s ease-in-out;
-        -moz-transition: background .3s ease-in-out;
         transition: background .3s ease-in-out;
 
         &:hover,
@@ -134,8 +132,6 @@ h1, h2, h3, h4 {
     border-bottom: none;
     letter-spacing: 1px;
     background: transparent;
-    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;
   }
 
@@ -160,8 +156,6 @@ h1, h2, h3, h4 {
   text-align: center;
   color: $grayscale-light;
   background: transparent url(../images/demo_placeholder_map.png) no-repeat scroll center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 
@@ -213,7 +207,8 @@ h1, h2, h3, h4 {
     position: absolute;
     bottom: 20px;
     left: 50%;
-    transform: translateX(-50%); /* centering hack */
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); /* centering hack */
     width: 80%;
     max-width: 350px;
 
