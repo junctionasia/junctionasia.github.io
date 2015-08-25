@@ -294,35 +294,35 @@ h1, h2, h3, h4 {
   $secondary-bg-size: 100% auto;
 
   &.if {
-    background: url(/images/logo_if2.png)no-repeat center/$primary-bg-size,
+    background: url(../images/logo_if2.png)no-repeat center/$primary-bg-size,
       linear-gradient(#2B6AB8, #2B6AB8) center/$secondary-bg-size no-repeat;
   }
   &.futurice {
-    background: url(/images/logo_futurice.png)no-repeat center/$primary-bg-size,
+    background: url(../images/logo_futurice.png)no-repeat center/$primary-bg-size,
       linear-gradient(#518E40, #518E40) center/$secondary-bg-size no-repeat;
   }
   &.klarna {
-    background: url(/images/logo_klarna.png)no-repeat center/$primary-bg-size,
+    background: url(../images/logo_klarna.png)no-repeat center/$primary-bg-size,
       linear-gradient(#2B6AB8, #2B6AB8) center/$secondary-bg-size no-repeat;
   }
   &.shopify {
-    background: url(/images/logo_shopify.png)no-repeat center/$primary-bg-size,
+    background: url(../images/logo_shopify.png)no-repeat center/$primary-bg-size,
       linear-gradient(#518E40, #518E40) center/$secondary-bg-size no-repeat;
   }
   &.aero {
-    background: url(/images/logo_aero.png)no-repeat center/$primary-bg-size,
+    background: url(../images/logo_aero.png)no-repeat center/$primary-bg-size,
       linear-gradient(#E6E6E6, #E6E6E6) center/$secondary-bg-size no-repeat;
   }
   &.uber {
-    background: url(/images/logo_uber.png)no-repeat center/$primary-bg-size,
+    background: url(../images/logo_uber.png)no-repeat center/$primary-bg-size,
       linear-gradient(#15183D, #15183D) center/$secondary-bg-size no-repeat;
   }
   &.rails {
-    background: url(/images/logo_rails.png)no-repeat center/$primary-bg-size,
+    background: url(../images/logo_rails.png)no-repeat center/$primary-bg-size,
       linear-gradient(#BF3721, #BF3721) center/$secondary-bg-size no-repeat;
   }
   &.aaltoes {
-    background: url(/images/logo_aaltoes-unlimited.png) no-repeat center/$primary-bg-size,
+    background: url(../images/logo_aaltoes-unlimited.png) no-repeat center/$primary-bg-size,
       linear-gradient(black, black) center/$secondary-bg-size no-repeat;
   }
 
