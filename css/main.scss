@@ -280,32 +280,41 @@ h1, h2, h3, h4 {
   cursor: pointer;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 80% auto;
+
+  $primary-bg-size: contain;
+  $secondary-bg-size: 100% auto;
 
   &.if {
-    background-image: url(/images/logo_if2.png);
+    background: url(/images/logo_if2.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#2B6AB8, #2B6AB8) center/$secondary-bg-size no-repeat;
   }
   &.futurice {
-    background-image: url(/images/logo_futurice.png);
+    background: url(/images/logo_futurice.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#518E40, #518E40) center/$secondary-bg-size no-repeat;
   }
   &.klarna {
-    background-image: url(/images/logo_klarna.png);
+    background: url(/images/logo_klarna.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#2B6AB8, #2B6AB8) center/$secondary-bg-size no-repeat;
   }
   &.shopify {
-    background-image: url(/images/logo_shopify.png);
+    background: url(/images/logo_shopify.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#518E40, #518E40) center/$secondary-bg-size no-repeat;
   }
   &.aero {
-    background-image: url(/images/logo_aero.png);
+    background: url(/images/logo_aero.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#E6E6E6, #E6E6E6) center/$secondary-bg-size no-repeat;
   }
   &.uber {
-    background-image: url(/images/logo_uber.png);
+    background: url(/images/logo_uber.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#15183D, #15183D) center/$secondary-bg-size no-repeat;
   }
   &.rails {
-    background-image: url(/images/logo_rails.png);
+    background: url(/images/logo_rails.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#BF3721, #BF3721) center/$secondary-bg-size no-repeat;
   }
   &.aaltoes {
-    background: url(/images/logo_aaltoes-unlimited.png) no-repeat center/80% auto,
-    linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) no-repeat center/262.5px;
+    background: url(/images/logo_aaltoes-unlimited.png) no-repeat center/$primary-bg-size,
+      linear-gradient(black, black) center/$secondary-bg-size no-repeat;
   }
 
 }
@@ -369,7 +378,9 @@ h1, h2, h3, h4 {
 }
 
 #specs{
+  position: relative;
   background-color: $dark-gray;
+  background: #1B1A17;
 
   h4{
     font-size: 30px;
@@ -446,6 +457,7 @@ $apply-color-hover: #EFEA3A;
   &:hover, &:active {
     color: $apply-color-hover;
     border-color: $apply-color-hover;
+    text-decoration: none;
   }
   &:active, &:focus {
     outline: none;
@@ -457,8 +469,56 @@ $apply-color-hover: #EFEA3A;
   background: $apply-color;
   border-color: $apply-color;
   font-weight: bold;
+  font-size: 25px;
+  padding: 0 30px;
+  height: 60px;
+  line-height: 50px;
+
 
   &:hover {
-
+    background: $apply-color-hover;
+    border-color: $apply-color-hover;
   }
+}
+
+.bars {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 10px;
+  background: #A72510;
+
+  &:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 33%;
+    height: 10px;
+    background: #115A5D;
+  }
+
+  &:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    width: 33%;
+    height: 10px;
+    background: #C6AC06;
+  }
+
+  &:last-child {
+    top: auto;
+    bottom: 0;
+  }
+
+  @media screen and (max-width: $screen-md-min) {
+    &:before, &:after {
+      display: none;
+    }
+  }
+
 }

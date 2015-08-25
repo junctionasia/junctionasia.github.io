@@ -1,0 +1,290 @@
+---
+layout: default
+---
+
+
+<style>
+.container {
+  font-size: 20px;
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  max-width: 720px;
+  margin: 0 auto;
+  margin-top: 75px;
+  font-weight: 300;
+  color: #CFCBCB;
+  line-height: 26px;
+}
+
+form {
+  width: 100%;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.form-input > label {
+  display: block;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.move-label {
+  margin-bottom: 35px;
+}
+
+.move-label input[type='text'],
+.move-label input[type='email'] {
+  transition: 0.125s ease-in all;
+}
+
+.move-label .input-box:before, .move-label .input-box:after {
+  height: 3px;
+  background: #B5B5BF;
+  width: 100%;
+  display: block;
+  content: "";
+  transition: 0.125s ease-in all;
+}
+
+.move-label.filled .input-box:before {
+  will-change: transform;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.move-label.fileld .input-box:after {
+  will-change: transform;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.move-label > label {
+  pointer-events: none;
+  will-change: transform;
+  -webkit-transform: translateY(45px);
+          transform: translateY(45px);
+  transition: 0.125s ease-in all;
+}
+
+.move-label.filled label,
+.move-label.filled label {
+  will-change: transform;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.form-input input[type='text'],
+.form-input input[type='email'],
+.form-input textarea {
+  padding: 0;
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  background: #252525;
+  margin-top: 5px;
+  font-size: 22px;
+  font-family: "Lato", "Helvetica Neue", sans-serif;
+  color: #B5B5BF;
+  color: white;
+  font-weight: normal;
+}
+
+.form-input input[type='text'],
+.form-input input[type='email'] {
+  height: 45px;
+  line-height: 45px;
+  background: transparent;
+}
+
+.form-input textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 10px ;
+  height: 250px;
+  border-radius: 3px;
+}
+
+input[type='text']:focus, input[type='email']:focus, textarea:focus { outline: none; }
+
+input[type='checkbox']:focus, input[type='radio']:focus {
+
+}
+
+.choices label {
+  display: block;
+  width: 100%;
+  padding: 7px 0;
+  font-weight: 300;
+}
+
+label > input[type='checkbox'],
+label > input[type='radio'] {
+  position: relative;
+  top: -3px;
+  margin-right: 10px;
+}
+
+.form-input + p {
+  margin-top: -25px;
+  margin-bottom: 35px;
+}
+
+button {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  font-size: 22px;
+  background-color: #fcf74c;
+  padding: 0 35px;
+  border: none;
+  border-radius: 3px;
+  margin: 0 auto 50px auto;
+  color: black;
+  transition: background-color 0.25s ease-in;
+  will-change: background-color;
+}
+
+button:hover {
+  background-color: #FFF800;
+  cursor: pointer;
+}
+
+</style>
+
+<div class='container'>
+    <form id='registration-form'>
+      <div class="form-input move-label">
+        <label for="full_name">Full name</label>
+        <div class="input-box">
+          <input type='text' id="full_name" name='full_name' required>
+      </div>
+    </div>
+    <div class="form-input move-label">
+        <label for="email">Email address</label>
+      <div class="input-box">
+        <input type="email" id="email" name="email" required>
+      </div>
+      </div>
+
+      <div class="form-input">
+        <label for="first_choice">Which track are you most interested in?</label>
+
+      <div class='choices'>
+        <label>
+            <input id="first_choice1" type='radio' name='first_choice' required value="futu" required>
+            Futulabs
+          </label>
+        <label>
+          <input id="first_choice2" type='radio' name='first_choice' required value="shopify">
+          The Future of Commerce
+        </label>
+          <label>
+          <input id="first_choice3" type='radio' name='first_choice' required value="finnair">
+          Air Travel
+        </label>
+        <label>
+            <input id="first_choice4" type='radio' name='first_choice' required value="if">
+          Pre-emptive Healthcare and Advanced Diagnostics
+        </label>
+        <label>
+          <input id="first_choice4" type='radio' name='first_choice' required value="klarna">
+          The Future of Digital Payments
+        </label>
+        <label>
+            <input id="first_choice5" type='radio' name='first_choice' required value="uber">
+            Improving Cities
+          </label>
+          <label>
+            <input id="first_choice6" type='radio' name='first_choice' required value="unlimited">
+            Unlimited
+        </label>
+      </div>
+    </div>
+
+    <div class="form-input">
+      <label>What other tracks are your interested in?</label>
+
+      <div class='choices'>
+          <label>
+          <input id="second_choices1" type='checkbox' name='second_choices' value="futu">
+          Futulabs
+        </label>
+        <label>
+            <input id="second_choices2" type='checkbox' name='second_choices' value="shopify">
+            The Future of Commerce
+        </label>
+        <label>
+          <input id="second_choices3" type='checkbox' name='second_choices' value="finnair">
+          Air Travel
+        </label>
+        <label>
+          <input id="second_choices4" type='checkbox' name='second_choices' value="if">
+          Pre-emptive Healthcare and Advanced Diagnostics
+        </label>
+        <label>
+          <input id="second_choices4" type='checkbox' name='second_choices' value="klarna">
+          The Future of Digital Payments
+        </label>
+        <label>
+          <input id="second_choices5" type='checkbox' name='second_choices' value="uber">
+          Improving Cities
+          </label>
+          <label>
+            <input id="second_choices6" type='checkbox' name='second_choices' value="unlimited">
+            Unlimited
+          </label>
+        </div>
+      </div>
+
+    <div class="form-input">
+      <label for="showcase">Provide links and/or describe any past projects, a portfolio site or anything else that would like to showcase.</label>
+      <textarea name="showcase" id="showcase" required></textarea>
+    </div>
+
+    <div class="form-input move-label">
+      <label for="github_username">Github username (optional)</label>
+      <div class="input-box">
+        <input type='text' type='text' id='github_username' name='github_username'>
+      </div>
+    </div>
+
+    <div class="form-input move-label">
+        <label for="team">Team (optional)</label>
+      <div class="input-box">
+        <input type='text' id="team" name='team'>
+      </div>
+    </div>
+    <p>Come up with some code for your team. Try to keep it unique. We will make sure that everyone in your teams gets accepted. If you don't have a team, don't worry, we will help you find one.</p>
+
+    <div class="form-input move-label">
+      <label for="secret_code">Secret code (optional)</label>
+      <div class="input-box">
+        <input type='text' id="secret_code" name='secret_code'>
+        </div>
+      </div>
+    <p>If you got a secret code, please enter it here.</p>
+
+    <div class="form-input move-label">
+      <label for="location">Where are you coming from?</label>
+      <div class="input-box">
+          <input type='text' id="location" name='location'>
+      </div>
+    </div>
+    <p>City and country is enough. This is to help us arrange transportation from the most popular cities.</p>
+
+      <div class="form-input">
+      <label for="additional_info">Additional information (optional)</label>
+      <textarea name='additional_info' id='additional_info'></textarea>
+    </div>
+    <p>Anything else you would like to tell us. Please enter any food allergies and special requirements so we can make the proper arrangements.</p>
+
+      <button>Submit</button>
+    </form>
+  </div>
+
+  <script type="text/javascript" src='/scripts/registration.js'></script>
