@@ -33,6 +33,7 @@ body{
   background-color: $darker-gray;
   font-family: $body-font-family;
   font-size: 16px;
+  font-weight: lighter;
 }
 
 .about-introduction{
@@ -399,13 +400,14 @@ h1, h2, h3, h4 {
   h4{
     font-size: 30px;
     margin-top: 0;
+    padding: 0 30px;
   }
 
   p{
     font-size: 18px;
     padding: 30px 30px;
     font-weight: 100;
-    text-align: left;
+    text-align: center;
   }
 
   .specs-icon{
