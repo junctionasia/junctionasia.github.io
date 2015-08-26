@@ -331,7 +331,13 @@ h1, h2, h3, h4 {
 
 .modal-content{
   color:white;
-  padding: 30px 100px;
+  padding: 30px 30px;
+
+  .close-modal{
+    float: right;
+    font-size: 40px;
+    cursor: pointer;
+  }
 
   a, a:visited, a:hover, a:active{
       color: white;
@@ -352,9 +358,16 @@ h1, h2, h3, h4 {
 
 }
 
+@media(min-width:$screen-xs-max){
+  .modal-content{
+    padding: 30px 100px;
+  }
 
+  .close-modal{
+    margin-right: -65px;
+  }
 
-
+}
 
 #if-modal .modal-content{
   background-color: #2b6ab8;

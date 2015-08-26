@@ -3892,13 +3892,20 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+var currentModal;
 
 // Open modal when track is clicked
 $('.track-box').click(function(e){
     var clickedTrack = e.target.className.split(" ")[1]; //get the clicked element class (eq. klarna)
-    $('#' + clickedTrack + '-modal').modal('show');
+    currentModal = $('#' + clickedTrack + '-modal');
+    currentModal.modal('show');
 });
 
+$('.close-modal').click(function(){
+    currentModal.modal('hide');
+});
+
+// Smooth loading effects
 var $logos = $('.junction-logo, .junction-text')
     .velocity({
         opacity: 0,
