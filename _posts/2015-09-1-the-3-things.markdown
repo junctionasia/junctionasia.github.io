@@ -1,0 +1,54 @@
+---
+layout: post
+title:  "The 3 things that will make or break your hackathon"
+date:   2015-09-01 16:35:03
+categories: junction hackathons
+fb_meta_image: "/images/blog-1-main.jpg"
+fb_meta_title: "The 3 things that will make or break your hackathon"
+fb_meta_description: "These three things will help you build a hackathon to remember"
+---
+
+![main-image]({{ "/images/blog-1-main.jpg" | prepend:site.baseurl }} 'Hackathons are awesome')
+
+Hackathons are perfect events for creative and talented people. They allow the participants to meet like-minded people while creating disruptive solutions, and to experience the latest technologies first-hand.
+
+For people who have ideas, and capabilities to execute these ideas, a hackathon is undoubtedly one of the best ways to spend a weekend.
+
+When you’re going through your Facebook or Twitter on a lazy sunday and run into an event that looks interesting, what is the yay or nay that settles whether you’ll join it or skip it?
+
+We think that it’s all about 3 elements.
+
+## People
+
+Whether it’s a house party, a baby shower or a hackathon, people are the single most important element for any event.
+
+That’s why you should look out for hackathons that attract interesting people from different kinds of backgrounds. You often learn most when you’re put on a collision course with new people, and at those moments also some of the most game-changing ideas come up.
+
+Surely there is more than one reason why someone would like to join a hackathon. At least meeting new people, learning new things and changing the world, should be at the top of that list.
+
+We believe that hackathons where people are genuinely interested in meeting new people – and have the urge to change the world – are events that stand out. So when you are choosing the right event to attend, have a little dig around to see what kind of hackers are attending.
+
+## Partners
+
+Innovative technology comes from innovative companies. As such, finding a hackathon that has interesting and disrupting partners is a thing worth looking into.
+
+Partners are essentially the backbone of the event as they are the ones that bring their hardware in and their APIs for you to hack on. These are the kind of companies that push their industries forward. The more disruptive, the better. But hey, that’s just our opinion.
+
+And If you’re going to hack on something anyway anyway, why not hack on something exciting that could potentially change the world? Might as well be a part of creating new disruptive solution and setting standards for the future.
+
+So be on the look out, choose the companies you are interested in, and find hackathons that are supported by the tech you love.
+
+## Event
+
+And so we come to our last point. The venue. In order to attract the right type of people and the right type of companies,  the venue will decide the hackathons limits. Not to mention it has to hold up the weight of the participants while catering for your basic needs.
+
+A hackathon can be many things, ranging from 30 guys in a warehouse writing a few lines of code, to 500 people in a massive industrial space having the best weekend in years. When it comes to the nature of these events, we believe in the latter.
+
+Bigger spaces give space to bigger ideas to grow. And more people. Who comes up with ideas? That’s right - People. If you want to experience something truly amazing, you probably should look for something more than a get-together at someone’s garage. As an added bonus, bigger spaces means potentially more hardware and more variety to hack on.
+
+![junction-blog1-1]({{ "/images/junction-blog1-1.png" | prepend:site.baseurl }} 'Amazing hackathon team')
+
+## All in All
+
+So, next time you are signing for an event, or simply considering to do so, use these three pillars as a guide in making your decision. People, partners and the event space. If all of those have a checkmark, there’s a good chance the event will be amazing.
+
