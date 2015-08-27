@@ -274,13 +274,13 @@ h1, h2, h3, h4 {
   .dotted-image{
     width: 100%;
     height: 200px;
-    background: url('../images/svg_dots_top.svg') repeat-x center/200%;
+    background: url('../images/svg_dots_top.svg') repeat-x center/auto 150px;
   }
 
   .dotted-image-bottom{
     width: 100%;
     height: 200px;
-    background: url('../images/svg_dots_bottom.svg') repeat-x center/200%;
+    background: url('../images/svg_dots_bottom.svg') repeat-x bottom/auto 150px;
   }
 }
 
@@ -302,7 +302,7 @@ h1, h2, h3, h4 {
   background-position: center;
   background-repeat: no-repeat;
 
-  $primary-bg-size: 90% auto;
+  $primary-bg-size: contain;
   $secondary-bg-size: 100% auto;
 
   transition: box-shadow 0.1s ease-out;
@@ -328,7 +328,7 @@ h1, h2, h3, h4 {
       linear-gradient(#6CA651, #6CA651) center/$secondary-bg-size no-repeat;
   }
   &.aero {
-    background: url(../images/logo_aero.png)no-repeat center/70% auto,
+    background: url(../images/logo_aero.png)no-repeat center/auto 75%,
       linear-gradient(#E6E6E6, #E6E6E6) center/$secondary-bg-size no-repeat;
   }
   &.uber {
@@ -356,11 +356,37 @@ h1, h2, h3, h4 {
     float: left;
     padding: 15px;
     text-align: center;
-  }
 
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+
+    @media screen and (max-width: $screen-md-max) {
+      width: 50%;
+      height: 300px;
+    }
+    @media screen and (max-width: $screen-xs-max) {
+      width: 100%;
+      height: 600px;
+    }
   img {
     width: 100%;
     display: inline-block;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;}
   }
 }
 
