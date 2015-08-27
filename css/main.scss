@@ -54,9 +54,10 @@ h1, h2, h3, h4 {
   margin-top: 1.2em;
   margin-bottom: 0.5em;
 
-  &.center {
-    text-align: center;
-  }
+}
+
+.center {
+  text-align: center;
 }
 
 // general containers
@@ -64,6 +65,10 @@ h1, h2, h3, h4 {
 .content-section {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.container.first {
+  margin-top: 80px;
 }
 
 // general buttons

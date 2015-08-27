@@ -134,7 +134,7 @@ label > input[type='radio'] {
   margin-bottom: 35px;
 }
 
-button {
+.form-wrapper button {
   display: block;
   height: 60px;
   line-height: 60px;
@@ -149,7 +149,7 @@ button {
   will-change: background-color;
 }
 
-button:hover {
+.form-wrapper button:hover {
   background-color: #FFF800;
   cursor: pointer;
 }
@@ -288,3 +288,11 @@ button:hover {
   </div>
 
   <script type="text/javascript" src='{{ "/scripts/registration.js" | prepend: site.baseurl }}'></script>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+
+        <p class='center'>By submitting this form you agree to our <a href='terms_and_conditions.html'>terms &amp; conditions</a> and agree to follow <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">the code of conduct.</a></p>
+      </div>
+    </div>
+  </div>
