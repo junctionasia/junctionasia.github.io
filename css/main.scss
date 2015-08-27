@@ -529,8 +529,21 @@ footer {
   background-color: $darker-gray;
 }
 
-.blog-index {
+.blog {
   margin-top: 80px;
+
+  a {
+    color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    display: block;
+    max-width: 90%;
+    margin: 50px auto;
+  }
 }
 
 .blog-post {

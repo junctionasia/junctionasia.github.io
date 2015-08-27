@@ -2,12 +2,16 @@
 layout: default
 ---
 
-<main role="main" class='blog-index'>
-  <div class="container">
+<main role="main" class='blog-index blog'>
+  <div class="container first">
     <div class="row">
         <div class="col-xs-12">
         {% for post in site.posts %}
 
+          <a href="{{ post.url | prepend:site.baseurl }}">
+            <h1 class="post-title">{{ post.title }}</h1></h1>
+          </a>
+          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
           {% include post_single.html %}
 
         {% endfor %}
