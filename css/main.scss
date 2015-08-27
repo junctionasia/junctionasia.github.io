@@ -45,7 +45,7 @@ body{
 @media(min-width:$screen-xs-max) {
   .about-introduction{
     padding: 0 60px;
-  }  
+  }
 }
 
 
@@ -53,6 +53,10 @@ h1, h2, h3, h4 {
   font-family: $headline-font-family;
   margin-top: 1.2em;
   margin-bottom: 0.5em;
+
+  &.center {
+    text-align: center;
+  }
 }
 
 // general containers
@@ -270,13 +274,13 @@ h1, h2, h3, h4 {
   .dotted-image{
     width: 100%;
     height: 200px;
-    background: url('../images/svg_dots_top.svg') repeat-x center top;
+    background: url('../images/svg_dots_top.svg') repeat-x center/200%;
   }
 
   .dotted-image-bottom{
     width: 100%;
     height: 200px;
-    background: url('../images/svg_dots_bottom.svg') repeat-x center bottom;
+    background: url('../images/svg_dots_bottom.svg') repeat-x center/200%;
   }
 }
 
@@ -298,8 +302,14 @@ h1, h2, h3, h4 {
   background-position: center;
   background-repeat: no-repeat;
 
-  $primary-bg-size: contain;
+  $primary-bg-size: 90% auto;
   $secondary-bg-size: 100% auto;
+
+  transition: box-shadow 0.1s ease-out;
+
+  &:hover {
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+  }
 
   &.if {
     background: url(../images/logo_if2.png)no-repeat center/$primary-bg-size,
@@ -307,23 +317,23 @@ h1, h2, h3, h4 {
   }
   &.futurice {
     background: url(../images/logo_futurice.png)no-repeat center/$primary-bg-size,
-      linear-gradient(#518E40, #518E40) center/$secondary-bg-size no-repeat;
+      linear-gradient(rgb(50, 158, 65), rgb(50, 158, 65)) center/$secondary-bg-size no-repeat;
   }
   &.klarna {
     background: url(../images/logo_klarna.png)no-repeat center/$primary-bg-size,
-      linear-gradient(#2B6AB8, #2B6AB8) center/$secondary-bg-size no-repeat;
+      linear-gradient(#0089CF, #0089CF) center/$secondary-bg-size no-repeat;
   }
   &.shopify {
     background: url(../images/logo_shopify.png)no-repeat center/$primary-bg-size,
-      linear-gradient(#518E40, #518E40) center/$secondary-bg-size no-repeat;
+      linear-gradient(#6CA651, #6CA651) center/$secondary-bg-size no-repeat;
   }
   &.aero {
-    background: url(../images/logo_aero.png)no-repeat center/$primary-bg-size,
+    background: url(../images/logo_aero.png)no-repeat center/70% auto,
       linear-gradient(#E6E6E6, #E6E6E6) center/$secondary-bg-size no-repeat;
   }
   &.uber {
     background: url(../images/logo_uber.png)no-repeat center/$primary-bg-size,
-      linear-gradient(#15183D, #15183D) center/$secondary-bg-size no-repeat;
+      linear-gradient(#111224, #111224) center/$secondary-bg-size no-repeat;
   }
   &.rails {
     background: url(../images/logo_rails.png)no-repeat center/$primary-bg-size,
@@ -334,6 +344,24 @@ h1, h2, h3, h4 {
       linear-gradient(black, black) center/$secondary-bg-size no-repeat;
   }
 
+}
+
+.partner-logos {
+  max-width: 750px;
+  margin: 0 auto;
+
+  .logo-box {
+    height: 150px;
+    width: 25%;
+    float: left;
+    padding: 15px;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    display: inline-block;
+  }
 }
 
 .modal-content{
@@ -376,24 +404,30 @@ h1, h2, h3, h4 {
 
 }
 
+.modal-content .track-box {
+  &:hover {
+    box-shadow: none;
+  }
+}
+
 #if-modal .modal-content{
   background-color: #2b6ab8;
 }
 #futurice-modal .modal-content{
-  background-color: #518e40;
+  background-color: #389D46;
 }
 #klarna-modal .modal-content{
-  background-color: #2b6ab8;
+  background-color: #158ACC;
 }
 #shopify-modal .modal-content{
-  background-color: #518e40;
+  background-color: #6CA651;
 }
 #aero-modal .modal-content{
   background-color: #e6e6e6;
   color: black;
 }
 #uber-modal .modal-content{
-  background-color: #15183d;
+  background-color: #111224;
 }
 #rails-modal .modal-content{
   background-color: #bf3721;
