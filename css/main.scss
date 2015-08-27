@@ -39,8 +39,15 @@ body{
 .about-introduction{
   font-family: $body-font-family;
   font-size: 20px;
-  padding: 0 60px;
+  padding: 0 30px;
 }
+
+@media(min-width:$screen-xs-max) {
+  .about-introduction{
+    padding: 0 60px;
+  }  
+}
+
 
 h1, h2, h3, h4 {
   font-family: $headline-font-family;
@@ -548,4 +555,18 @@ $apply-color-hover: #EFEA3A;
     }
   }
 
+}
+
+/* FAQ */
+
+#FAQ{
+  h4{
+    margin-top: 50px;
+    text-align: left;
+    color: $apply-color;
+  }
+
+  p{
+    text-align: left;
+  }
 }
