@@ -14,14 +14,30 @@
   <link rel="shortcut icon" href="{{ "/favicon.png" | prepend: site.baseurl }}">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Raleway:400,300,600|Lato:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <meta property="og:title" content="Junction Hackathon ￨ November 6th-8th" />
 
-  <meta property="og:description" content="Junction is a 48h hackathon taking place in Helsinki, Finland from the 6th to the 8th of November. Participants will hack in teams using emerging technologies in different tracks focusing on industry specific themes, including, but not restricted to: Online Marketplaces, Payments and The Future of Air Travel." />
+  {% if page and page.fb_meta_title %}
+    <meta property="og:title" content="{{ page.fb_meta_title }}" />
+  {% else %}
+    <meta property="og:title" content="Junction Hackathon ￨ November 6th-8th" />
+  {% endif %}
+
+  {% if page and page.fb_meta_description %}
+    <meta property="og:description" content="{{ page.fb_meta_description }}" />
+  {% else %}
+    <meta property="og:description" content="Junction is a 48h hackathon taking place in Helsinki, Finland from the 6th to the 8th of November. Participants will hack in teams using emerging technologies in different tracks focusing on industry specific themes, including, but not restricted to: Online Marketplaces, Payments and The Future of Air Travel." />
+  {% endif %}
+
+  {% if page and page.fb_meta_image %}
+    <meta property="og:image" content="{{ page.fb_meta_image | prepend: site.baseurl | prepend:site.url}}" />
+  {% else %}
+  <meta property="og:image" content="{{ "/images/opengraph.jpg" | prepend: site.baseurl }}" />
+
+  {% endif %}
+
   <meta property="og:site_name" content="Junction" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://hackjunction.com" />
 
-  <meta property="og:image" content="{{ "/images/opengraph.jpg" | prepend: site.baseurl }}" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />

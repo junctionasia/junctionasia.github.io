@@ -1,8 +1,11 @@
 ---
 layout: post
-title:  "The 3 Things that will make or break your hackathon"
+title:  "The 3 things that will make or break your hackathon"
 date:   2015-09-01 16:35:03
 categories: junction hackathons
+fb_meta_image: "/images/blog-1-main.jpg"
+fb_meta_title: "The 3 things that will make or break your hackathon"
+fb_meta_description: "These three things will help you build a hackathon to remember"
 ---
 
 ![main-image]({{ "/images/blog-1-main.jpg" | prepend:site.baseurl }} 'Hackathons are awesome')
