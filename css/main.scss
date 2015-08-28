@@ -363,7 +363,7 @@ h1, h2, h3, h4 {
     height: 150px;
     width: 25%;
     float: left;
-    padding: 15px;
+    padding: 0 15px;
     text-align: center;
 
     display: -webkit-flex;
@@ -371,32 +371,33 @@ h1, h2, h3, h4 {
     display: flex;
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
-            justify-content: space-around;
+    justify-content: space-around;
     -webkit-align-items: center;
     -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
 
     @media screen and (max-width: $screen-md-max) {
       width: 50%;
       height: 125px;
     }
-  img {
-    width: 100%;
-    @media screen and (max-width: $screen-md-max) {
-      width: 200px;
+
+    img {
+      width: 100%;
+      @media screen and (max-width: $screen-md-max) {
+        width: 200px;
+      }
+      display: inline-block;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;}
     }
-    display: inline-block;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;}
   }
-}
 
 .modal-content{
   color:white;
@@ -518,10 +519,22 @@ h1, h2, h3, h4 {
   padding-bottom: 20px;
   background: rgb(28, 28, 28);
 
+  a {
+    opacity: 0.8;
+    transition: opacity 0.1s ease-out;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
   img {
     height: 50px;
     padding: 10px;
     display: inline-block;
+
+    &:hover {
+      -webkit-filter: brightness(200%);
+    }
   }
 }
 

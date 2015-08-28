@@ -284,8 +284,13 @@ label > input[type='radio'] {
     <p>Anything else you would like to tell us. Please enter any food allergies and special requirements so we can make the proper arrangements.</p>
 
       <button>Submit</button>
-    </form>
+  </form>
+  <div class="success" id="done">
+    <h1 class="registration-heading">Thanks for registering!</h1>
+    <p>We want to make an awesome event. Not just for the sake of an awesome event, but more importantly for you, the attendee. After all, the people make the party. Thank you for participating and good luck with your application! Be sure to tell your friends and like us on <a href="https://facebook.com/hackjunction">Facebook</a>!</p>
   </div>
+  <div class="error alert" id="error"><p>Something went wrong while we were trying to submit your application. Please contact us at <a href="mailto:junction@aaltoes.com?subject=Submitting%20application%20failed">junction@aaltoes.com</a>.</p></div>
+</div>
 
   <script type="text/javascript" src='{{ "/scripts/registration.js" | prepend: site.baseurl }}'></script>
   <div class="container">
