@@ -355,6 +355,10 @@ h1, h2, h3, h4 {
   max-width: 750px;
   margin: 0 auto;
 
+  h1{
+    margin-bottom: 50px;
+  }
+
   .logo-box {
     height: 150px;
     width: 25%;
@@ -374,14 +378,13 @@ h1, h2, h3, h4 {
 
     @media screen and (max-width: $screen-md-max) {
       width: 50%;
-      height: 300px;
-    }
-    @media screen and (max-width: $screen-xs-max) {
-      width: 100%;
-      height: 600px;
+      height: 125px;
     }
   img {
     width: 100%;
+    @media screen and (max-width: $screen-md-max) {
+      width: 200px;
+    }
     display: inline-block;
     display: -webkit-flex;
     display: -ms-flexbox;
