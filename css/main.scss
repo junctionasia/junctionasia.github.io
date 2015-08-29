@@ -704,7 +704,7 @@ $apply-color-hover: #EFEA3A;
 
 /* FAQ */
 
-#FAQ{
+.text-content {
   h4{
     margin-top: 50px;
     text-align: left;
@@ -714,4 +714,12 @@ $apply-color-hover: #EFEA3A;
   p{
     text-align: left;
   }
+}
+
+
+#prizes {
+  h4, p {
+    text-align: center;
+  }
+
 }
