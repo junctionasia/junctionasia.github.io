@@ -414,6 +414,13 @@ h1, h2, h3, h4 {
       -ms-flex-align: center;
       align-items: center;
     }
+
+    &.if {
+      img {
+        height: 65%;
+        width: auto;
+      }
+    }
   }
 }
 
