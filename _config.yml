@@ -5,8 +5,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Come join us at Junction to learn something new, build an app or start a company.
   Junction brings together people who want to build things for one weekend of hacking.
   Charge your laptops and bring your friends for an amazing event. Let's hack!
-baseurl: "/hackjunction" # the subpath of your site, e.g. /blog/
-url: "http://peksi.github.io/hackjunction" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://hackjunction.com" # the base hostname & protocol for your site
 twitter_username: hackjunction
 github_username:  kekeblom
 
