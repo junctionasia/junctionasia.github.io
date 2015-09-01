@@ -93,7 +93,7 @@ h1, h2, h3, h4 {
   border-bottom: 1px solid transparentize($grayscale-light, 0.7);
   text-transform: uppercase;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-  background-color: $grayscale-dark;
+  background-color: $grayscale-dark !important;
 
   .navbar-brand {
     font-weight: 700;
@@ -308,6 +308,21 @@ h1, h2, h3, h4 {
 
 #tracks .row:first-child {
   margin-bottom: 30px;
+}
+
+#mlh-trust-badge {
+  position:absolute;
+  top:90px;
+  right:50px;
+  max-width:100px;
+  width:10%;
+  min-width: 60px;
+  display:block;
+  z-index:1;
+
+  @media screen and (max-width: $screen-xs-max) {
+    top: 60px;
+  }
 }
 
 .track-box{
