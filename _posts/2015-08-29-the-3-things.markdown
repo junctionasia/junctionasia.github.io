@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "The 3 things that will make or break your hackathon"
-date:   2015-08-28 14:00:00
+author: Kasimir Marttinen, Aaltoes
+date:   2015-09-01 14:00:00
 categories: junction hackathons
 fb_meta_image: "/images/blog-1-main.jpg"
 fb_meta_title: "The 3 things that will make or break your hackathon"
