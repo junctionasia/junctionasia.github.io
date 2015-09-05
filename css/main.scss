@@ -372,9 +372,26 @@ h1, h2, h3, h4 {
     background: url(../images/logo_rails.png)no-repeat center/75% auto,
       linear-gradient(#BF3721, #BF3721) center/$secondary-bg-size no-repeat;
   }
+  &.mehackit {
+    background: url(../images/mehackit_track_image.jpg)no-repeat center/$primary-bg-size,
+      linear-gradient(#ED6159, #ED6159) center/$secondary-bg-size no-repeat
+  }
   &.aaltoes {
     background: url(../images/logo_aaltoes-unlimited.png) no-repeat center/$primary-bg-size,
       linear-gradient(black, black) center/$secondary-bg-size no-repeat;
+
+    @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+      width: 25%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
   }
 
 }
@@ -520,6 +537,9 @@ h1, h2, h3, h4 {
 }
 #rails-modal .modal-content{
   background-color: #bf3721;
+}
+#mehackit-modal .modal-content{
+  background-color: #ED6159;
 }
 #aaltoes-modal .modal-content{
   background-color: black;
