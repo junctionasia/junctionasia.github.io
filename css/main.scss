@@ -371,6 +371,12 @@ h1, h2, h3, h4 {
   &.rails {
     background: url(../images/logo_rails.png)no-repeat center/75% auto,
       linear-gradient(#BF3721, #BF3721) center/$secondary-bg-size no-repeat;
+
+    @media screen and (max-width: $screen-sm-max) {
+      background: url(../images/logo_rails.png)no-repeat center/200px auto,
+      linear-gradient(#BF3721, #BF3721) center/$secondary-bg-size no-repeat;
+    }
+
   }
   &.mehackit {
     background: url(../images/mehackit_track_image.jpg)no-repeat center/$primary-bg-size,
