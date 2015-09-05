@@ -3989,6 +3989,7 @@ document.addEventListener("DOMContentLoaded", function() {
   form.addEventListener('submit', function(event) {
     event.preventDefault();
     event.stopPropagation();
+    $('#done, #error').hide();
     $.ajax({
       type: 'POST',
       url: API_ENDPOINT,
@@ -3996,9 +3997,10 @@ document.addEventListener("DOMContentLoaded", function() {
       data: JSON.stringify(getData())
     }).done(function() {
       $(form).hide();
-      $("#done").show();
+      $('.side-events').hide();
+      $("#done").fadeIn(250);
     }).error(function() {
-      $("#error").show();
+      $("#error").show(250);
     });
   });
 

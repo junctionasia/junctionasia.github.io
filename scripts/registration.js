@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
       data: JSON.stringify(getData())
     }).done(function() {
       $(form).hide();
+      $('.side-events').hide();
       $("#done").fadeIn(250);
     }).error(function() {
       $("#error").show(250);
