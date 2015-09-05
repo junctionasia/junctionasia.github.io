@@ -369,7 +369,7 @@ h1, h2, h3, h4 {
       linear-gradient(#111224, #111224) center/$secondary-bg-size no-repeat;
   }
   &.rails {
-    background: url(../images/logo_rails.png)no-repeat center/$primary-bg-size,
+    background: url(../images/logo_rails.png)no-repeat center/75% auto,
       linear-gradient(#BF3721, #BF3721) center/$secondary-bg-size no-repeat;
   }
   &.aaltoes {
