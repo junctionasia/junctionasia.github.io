@@ -33,7 +33,7 @@ body{
   background-color: $darker-gray;
   font-family: $body-font-family;
   font-size: 16px;
-  font-weight: lighter;
+  font-weight: 300;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -590,7 +590,7 @@ h1, h2, h3, h4 {
   p{
     font-size: 18px;
     padding: 30px 30px;
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
   }
 
