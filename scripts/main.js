@@ -38,37 +38,6 @@ $(document).ready(function() {
         currentModal.modal('hide');
     });
 
-    // Smooth loading effects
-    var $logos = $('.junction-logo, .junction-text')
-        .velocity({
-            opacity: 0,
-            translateY: '100px'
-        }, 0);
-
-    var otherTexts = $('.junction-subtitle, .date, .main-apply, .slushhacks')
-        .velocity({
-            opacity: 0
-        }, 0);
-
-    $(document).ready(function() {
-        setTimeout(function() {
-            $.Velocity.animate($logos, {
-                opacity: 1,
-                translateY: 0
-            }, {
-                duration: 750,
-                easing: [0.175, 0.885, 0.32, 1.275]
-            }).then(function() {
-                otherTexts.velocity({
-                    opacity: 1
-                }, {
-                    duration: 1000,
-                    easing: 'swing'
-                });
-            });
-        }, 1000);
-    });
-
     (function() {
         var world = [
         0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

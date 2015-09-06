@@ -307,7 +307,7 @@ module.exports = function (grunt) {
     // },
     concat: {
       js: {
-        src: ['bower_components/velocity/velocity.js', 'scripts/*.js'],
+        src: ['scripts/*.js'],
         dest: 'dist/build.js'
       }
     },
