@@ -34,6 +34,10 @@ body{
   font-family: $body-font-family;
   font-size: 16px;
   font-weight: lighter;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
 }
 
 .about-introduction{
@@ -170,15 +174,16 @@ h1, h2, h3, h4 {
   height: auto;
   padding: 100px 0;
   text-align: center;
+  background-color: #0F0E0C;
+  overflow: hidden;
   color: $grayscale-light;
-  background: transparent url(../images/demo_placeholder_map.png) no-repeat scroll center center;
-  background-size: cover;
-  -o-background-size: cover;
+
 
   .fb-like {
     position: absolute;
     top: 10px;
     left: 50px;
+    z-index: 100;
 
     @media screen and (max-width: $screen-md-min) {
       left: 20px;
@@ -186,15 +191,25 @@ h1, h2, h3, h4 {
     }
   }
 
-  &:before {
-    display: block;
+  #webgl-view {
     position: absolute;
-    height: 100%;
+    top: 60px;
     width: 100%;
-    left: 0;
-    top: 0;
-    content: "";
-    background: rgba(0, 0, 0, 0.7);
+    min-width: 1000px;
+    max-width: 1200px;
+    height: 100%;
+
+    canvas {
+      min-height: 100%;
+      left: 50%;
+      transform: translateX(-30%);
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      & {
+        left: -40%;
+      }
+    }
   }
 
   .intro-body {
