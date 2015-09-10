@@ -90,7 +90,9 @@ $(document).ready(function() {
         0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
         0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
         ];
-      var el=$("#webgl-view"),pixelRatio=window.devicePixelRatio||1,rendererOptions={antialias:!0,transparent:!1,resolution:pixelRatio},renderer=new PIXI.autoDetectRenderer(el.width(),el.height(),rendererOptions);renderer.backgroundColor=986636;
+      var el=$("#webgl-view");
+      if (!el.length) return;
+      var pixelRatio=window.devicePixelRatio||1,rendererOptions={antialias:!0,transparent:!1,resolution:pixelRatio},renderer=new PIXI.autoDetectRenderer(el.width(),el.height(),rendererOptions);renderer.backgroundColor=986636;
       for(var sprites=[],worldWidth=128,worldHeight=49,cellWidth=32,halfWidth=cellWidth/2,margin=2,scale=el.width()/(cellWidth*worldWidth),baseColor=new PointColor(35,35,31),worldColors=[],stage=new PIXI.Container(16777215),y=0;y<worldHeight;y++)for(var x=0;x<worldWidth;x++)if(1===world[x+y*worldWidth]){var sprite=PIXI.Sprite.fromImage("images/circle.png");sprite.position.x=x*cellWidth*scale;sprite.position.y=y*cellWidth*scale;sprite.scale.x=scale;sprite.scale.y=scale;stage.addChild(sprite);sprites.push(sprite)}else sprites.push("");
       var locations=[new Location(73,7),new Location(32,14),new Location(28,17),new Location(38,12),new Location(46,38),new Location(107,32),new Location(74,18),new Location(20,12),new Location(91,24),new Location(37,14),new Location(102,24),new Location(125,43),new Location(117,40),new Location(30,22),new Location(76,17),new Location(114,15),new Location(104,15),new Location(99,26),new Location(90,21),new Location(73,14),new Location(69,7),new Location(64,11),new Location(64,13),new Location(22,17),new Location(65,
       12),new Location(68,10),new Location(76,9)],currentLocation=locations[0],effects=[],fps=23.97,lastFrame=(new Date).getTime();initialize();onWindowResize();animate();var colorBag=[new PointColor(251-baseColor.r,105-baseColor.g,0-baseColor.b),new PointColor(12-baseColor.r,108-baseColor.g,112-baseColor.b),new PointColor(220-baseColor.r,195-baseColor.g,25-baseColor.b)];
@@ -27623,7 +27625,11 @@ document.addEventListener("DOMContentLoaded", function() {
   var API_ENDPOINT = 'http://junction.aaltoes.com/register';
 
   var form = document.querySelector('#registration-form');
-  if (!form) return;
+  if (!form) {
+    return;
+  } else {
+    preselect();
+  }
 
   var getData = function() {
     var data = {};
@@ -27658,5 +27664,17 @@ document.addEventListener("DOMContentLoaded", function() {
       $("#error").show(250);
     });
   });
+
+  function preselect() {
+    if (!window.location.search) return;
+    window.location.search.slice(1).split('&').forEach(function(pair) {
+      pair = pair.split('=');
+      var key = pair[0];
+      var value = pair[1];
+      if (key == 'track') {
+        $("input[value='" + value + "'][name='first_choice']").prop('checked', true);
+      }
+    });
+  }
 
 });

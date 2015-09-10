@@ -30,7 +30,11 @@ document.addEventListener("DOMContentLoaded", function() {
   var API_ENDPOINT = 'http://junction.aaltoes.com/register';
 
   var form = document.querySelector('#registration-form');
-  if (!form) return;
+  if (!form) {
+    return;
+  } else {
+    preselect();
+  }
 
   var getData = function() {
     var data = {};
@@ -65,5 +69,17 @@ document.addEventListener("DOMContentLoaded", function() {
       $("#error").show(250);
     });
   });
+
+  function preselect() {
+    if (!window.location.search) return;
+    window.location.search.slice(1).split('&').forEach(function(pair) {
+      pair = pair.split('=');
+      var key = pair[0];
+      var value = pair[1];
+      if (key == 'track') {
+        $("input[value='" + value + "'][name='first_choice']").prop('checked', true);
+      }
+    });
+  }
 
 });
