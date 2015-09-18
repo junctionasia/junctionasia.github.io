@@ -363,8 +363,22 @@ h1, h2, h3, h4 {
   }
 
   &.if {
-    background: url(../images/logo_if2.png)no-repeat center/$primary-bg-size,
-      linear-gradient(#2B6AB8, #2B6AB8) center/$secondary-bg-size no-repeat;
+    background: url(../images/logo_if2.png) no-repeat center 30%/35%,
+    linear-gradient(#fff, #fff) center/100% auto no-repeat;
+    position: relative;
+    &:after {
+      content: "Health";
+      font-family: "Lato";
+      font-size: 22px;
+      color: #3383B6;
+      line-height: 22px;
+      font-weight: 700;
+      bottom: 20%;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      left: 0;
+    }
   }
   &.futurice {
     background: url(../images/logo_futurice.png)no-repeat center/$primary-bg-size,
@@ -541,7 +555,16 @@ h1, h2, h3, h4 {
 }
 
 #if-modal .modal-content{
-  background-color: #2b6ab8;
+  background-color: #fff;
+  color: black;
+
+  .track-box {
+    background: url(../images/logo_if2.png) no-repeat center 30%/65%, linear-gradient(#fff, #fff) center/100% auto no-repeat;
+  }
+
+  .track-box:after {
+    display: none;
+  }
 }
 #futurice-modal .modal-content{
   background-color: #389D46;
