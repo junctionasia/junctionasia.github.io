@@ -363,7 +363,7 @@ h1, h2, h3, h4 {
   }
 
   &.if {
-    background: url(../images/logo_if2.png) no-repeat center 30%/35%,
+    background: url(../images/logo_if2.png) no-repeat center 30%/auto 50%,
     linear-gradient(#fff, #fff) center/100% auto no-repeat;
     position: relative;
     &:after {
