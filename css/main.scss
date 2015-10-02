@@ -813,6 +813,10 @@ $apply-color-hover: #EFEA3A;
 /* FAQ */
 
 .text-content {
+  h1 {
+    margin-top: 50px;
+  }
+
   h4{
     margin-top: 50px;
     text-align: left;
@@ -830,4 +834,29 @@ $apply-color-hover: #EFEA3A;
     text-align: center;
   }
 
+}
+
+.schedule {
+  h3 {
+    font-weight: bold;
+  }
+  .table {
+    text-align: left;
+    font-size: 20px;
+
+    td:nth-child(1), td:nth-child(2) {
+      width: 10%;
+      min-width: 50px;
+    }
+    td:last-child {
+      width: 15%;
+      min-width: 75px;
+    }
+  }
+
+  thead {
+    font-weight: bold;
+    color: $apply-color;
+    border-bottom: 2px solid $apply-color;
+  }
 }
