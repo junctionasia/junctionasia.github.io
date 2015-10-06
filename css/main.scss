@@ -475,6 +475,11 @@ h1, h2, h3, h4 {
        center/$secondary-bg-size no-repeat;
 
   }
+    &.enoro {
+    background: url(../images/logos/enoro_partner.png)no-repeat center/80% auto,
+       center/$secondary-bg-size no-repeat;
+
+  }
 }
 
 .partner-logos {
