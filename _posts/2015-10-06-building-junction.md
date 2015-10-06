@@ -17,7 +17,7 @@ At first the idea of hosting a hackathon for 500 participants in the slushy and 
 
 We visioned a hackathon that would be something big, cool and truly thrilling. Something that sets up a new normal for the entire concept. That’s why we realized from early on that the production of the event would have to be a lot more than just setting up an internet connection, a few tables in a brightly lit lecture hall and ordering a large pizza delivery.
 
-## What does it take In order to get a sneak
+## What does it take
 
 In order to get a sneak peek to what does it take to build up a massive hackathon event such as Junction, we asked Ville and Jesse - the guys in charge of the production - to tell a bit more about the process. They nailed the three main things down: hands, design and practicalities.
 
