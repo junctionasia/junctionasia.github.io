@@ -393,8 +393,8 @@ h1, h2, h3, h4 {
       linear-gradient(#6CA651, #6CA651) center/$secondary-bg-size no-repeat;
   }
   &.aero {
-    background: url(../images/logo_aero.png)no-repeat center/auto 75%,
-      linear-gradient(#E6E6E6, #E6E6E6) center/$secondary-bg-size no-repeat;
+    background: url(../images/logo_aero.png)no-repeat center/auto 100%,
+      linear-gradient(#D5EDF8, #D5EDF8) center/$secondary-bg-size no-repeat;
   }
   &.uber {
     background: url(../images/logo_uber.png)no-repeat center/$primary-bg-size,
@@ -447,24 +447,24 @@ h1, h2, h3, h4 {
 
   transition: box-shadow 0.1s ease-out;
 
-  
 
-  
+
+
   &.text h4{
     margin-top: 0px
   }
-  
+
   &.text{
     margin-top: 30px;
 	margin-bottom: 40px;
   }
-  
+
   &.op {
     background: url(../images/op_logo.png)no-repeat center/auto 90%,
       linear-gradient(#FFFFFF, #FFFFFF) center/$secondary-bg-size no-repeat;
 
   }
-   
+
   &.omena {
     background: url(../images/omena_logo.png)no-repeat center/80% auto,
       linear-gradient(#d80a0a, #d80a0a) center/$secondary-bg-size no-repeat;
@@ -624,7 +624,7 @@ h1, h2, h3, h4 {
   background-color: #6CA651;
 }
 #aero-modal .modal-content{
-  background-color: #e6e6e6;
+  background-color: #D5EDF8;
   color: black;
 }
 #uber-modal .modal-content{
