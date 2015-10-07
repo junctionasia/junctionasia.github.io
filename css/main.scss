@@ -480,6 +480,11 @@ h1, h2, h3, h4 {
        center/$secondary-bg-size no-repeat;
 
   }
+	&.cozify {
+    background: url(../images/logos/cozify.png)no-repeat center/80% auto,
+       center/$secondary-bg-size no-repeat;
+
+  }
 }
 
 .partner-logos {
@@ -891,7 +896,11 @@ $apply-color-hover: #EFEA3A;
   .table {
     text-align: left;
     font-size: 20px;
-
+	&.hardware tbody td{
+		
+			padding-left:30px;
+		
+	}
     td:nth-child(1), td:nth-child(2) {
       width: 10%;
       min-width: 50px;
