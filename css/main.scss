@@ -201,16 +201,20 @@ h1, h2, h3, h4 {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+	overflow:hidden;
 
     canvas {
+	 min-width: 1000px;
+      max-width: 1200px;
       min-height: 100%;
-      left: 50%;
-      transform: translateX(-30%);
+      left: 0px;
+	  overflow:hidden;
+	  
     }
 
     @media screen and (max-width: $screen-xs-max) {
       & {
-        left: -40%;
+        //left: -0%;
       }
     }
   }
@@ -485,6 +489,16 @@ h1, h2, h3, h4 {
        center/$secondary-bg-size no-repeat;
 
   }
+  	&.jcdecaux {
+    background: url(../images/logos/jcdecaux.png)no-repeat center/80% auto,
+       center/$secondary-bg-size no-repeat;
+
+  }
+    &.upcloud {
+    background: url(../images/logos/upcloud.png)no-repeat center/80% auto,
+       center/$secondary-bg-size no-repeat;
+
+  }
 }
 
 .partner-logos {
@@ -509,7 +523,8 @@ h1, h2, h3, h4 {
     -webkit-align-items: center;
     -ms-flex-align: center;
             align-items: center;
-  }
+}
+
 
   .logo-box {
     display: block;
