@@ -515,7 +515,10 @@ hr.article-divider{
     &.hiq {
     background: url(../images/logos/hiq.png)no-repeat center/80% auto,
        center/$secondary-bg-size no-repeat;
-
+  }
+    &.procountor {
+    background: url(../images/logos/procounter.png)no-repeat center/80% auto,
+       center/$secondary-bg-size no-repeat;
   }
 }
 
