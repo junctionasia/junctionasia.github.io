@@ -208,7 +208,6 @@ h1, h2, h3, h4 {
       max-width: 1200px;
       min-height: 100%;
       left: 0px;
-	  overflow:hidden;
 	  
     }
 
@@ -496,6 +495,16 @@ h1, h2, h3, h4 {
   }
     &.upcloud {
     background: url(../images/logos/upcloud.png)no-repeat center/80% auto,
+       center/$secondary-bg-size no-repeat;
+
+  }
+    &.affecto {
+    background: url(../images/logos/affecto.png)no-repeat center/80% auto,
+       center/$secondary-bg-size no-repeat;
+
+  }
+    &.hiq {
+    background: url(../images/logos/hiq.png)no-repeat center/80% auto,
        center/$secondary-bg-size no-repeat;
 
   }
