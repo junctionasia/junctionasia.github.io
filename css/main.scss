@@ -519,6 +519,10 @@ hr.article-divider{
     background: url(../images/logos/procounter.png)no-repeat center/80% auto,
        center/$secondary-bg-size no-repeat;
   }
+	&.epictv {
+    background: url(../images/logos/epictv.png)no-repeat center/80% auto,
+       center/$secondary-bg-size no-repeat;
+  }
 }
 
 .partner-logos {
