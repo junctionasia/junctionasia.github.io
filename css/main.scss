@@ -217,7 +217,7 @@ hr.article-divider{
       max-width: 1200px;
       min-height: 100%;
       left: 0px;
-	  
+
     }
 
     @media screen and (max-width: $screen-xs-max) {
@@ -776,7 +776,14 @@ footer {
   img {
     display: block;
     max-width: 90%;
-    margin: 50px auto;
+    margin: 35px auto;
+  }
+
+  img + em {
+    display: block;
+    max-width: 90%;
+    margin: -25px auto 25px auto;
+    max-width: 90%;
   }
 }
 
@@ -936,9 +943,9 @@ $apply-color-hover: #EFEA3A;
     text-align: left;
     font-size: 20px;
 	&.hardware tbody td{
-		
+
 			padding-left:30px;
-		
+
 	}
     td:nth-child(1), td:nth-child(2) {
       width: 10%;
