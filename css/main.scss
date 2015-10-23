@@ -523,6 +523,14 @@ hr.article-divider{
     background: url(../images/logos/epic.png)no-repeat center/80% auto,
        center/$secondary-bg-size no-repeat;
   }
+    &.uber {
+    background: url(../images/logos/uber.png)no-repeat center/80% auto,
+       center/$secondary-bg-size no-repeat;
+  }
+    &.unity {
+    background: url(../images/logos/unity.png)no-repeat center/80% auto,
+       center/$secondary-bg-size no-repeat;
+  }
 }
 
 .partner-logos {
