@@ -8,6 +8,8 @@ fb_meta_title: "Air travel needs the window seat"
 fb_meta_description: "Remember the days when air travel was all glamour, beautiful air hostesses and PanAm’s wonderful advertising? Well, the world has come a long way since. And yet, as passengers - we do not really seem to be getting the same joy out of the experience."
 ---
 
+![main-image]({{ "/images/blog_6a.jpg" | prepend:site.baseurl }})
+
 Remember the days when air travel was all glamour, beautiful air hostesses and PanAm’s wonderful advertising? Well, the world has come a long way since. And yet, as passengers - we do not really seem to be getting the same joy out of the experience.
 
 In an environment as complex as the air travel ecosystem, where safety is top priority - and fragmentation is the norm, innovation can be tough going. Stakeholders come in the shape of airlines, travel agents, technology providers, tour operators, independent booking engines and many more, which means that the passenger experience is far from seamless.
@@ -19,6 +21,8 @@ Thanks to some of the fantastic work Finnair and Reaktor have carried out togeth
 You see, we are of the belief that air travel as an industry can very much benefit from taking a look out of the proverbial window. Although cross-pollination of ideas and innovations is true and valid across many industries, air travel has remained introspective to its own detriment. We live in a world where airlines are forced to play catch-up with increasingly tech-savvy and empowered travellers in a difficult economic climate. All the while trying to protect their business and trying to carve out whatever possible from minuscule profit margins.
 
 Enter you, the hackers.
+
+![main-image]({{ "/images/blog_6b.jpg" | prepend:site.baseurl }})
 
 You guys are in a privileged position. Not because you will be joining the hackathon (that would be small-minded of us), but instead, you are in a privileged position because history has shown us time and time again that; when key players in an industry, technology providers and hungry people ready to make a difference get together - great things are bound to happen. You are privileged because you belong to a very small group with the tools, knowledge and opportunity to make a meaningful difference in one of the world’s biggest industries.
 
