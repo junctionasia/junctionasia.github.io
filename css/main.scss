@@ -539,6 +539,10 @@ hr.article-divider{
     background: url(../images/logos/mixradio.png)no-repeat center/60% auto,
        linear-gradient(#FF2E81,#FF2E81) center/$secondary-bg-size no-repeat;
   }
+  &.purewaste {
+    background: url(../images/logos/purewaste_black.png)no-repeat center/80% auto,
+       linear-gradient(#FFFFFF,#FFFFFF) center/$secondary-bg-size no-repeat;
+  }
 }
 
 .partner-logos {
