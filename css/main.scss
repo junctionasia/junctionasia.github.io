@@ -612,6 +612,19 @@ hr.article-divider{
         width: auto;
       }
     }
+	&.purewaste{
+		div {
+		height:90%;
+		width:auto;
+		background-color:white;
+		}
+		img{
+		height: 80%;
+        width: auto;
+		margin:15px;
+		}
+		
+	}
   }
 }
 
