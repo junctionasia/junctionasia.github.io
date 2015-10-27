@@ -48,7 +48,7 @@ Happy hacking!
 
 Yours in travel,
 
-the .AERO crew
+[the .AERO crew](http://futureoftravel.co)
 
 Finnair, Reaktor, Finavia
 
