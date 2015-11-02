@@ -615,12 +615,13 @@ hr.article-divider{
       align-items: center;
     }
 
-    &.if, &.solu, &.op {
+    &.if, &.solu, &.op,&.tter {
       img {
         height: 65%;
         width: auto;
       }
     }
+
   }
 }
 
