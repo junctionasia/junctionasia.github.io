@@ -542,10 +542,13 @@ hr.article-divider{
   &.purewaste {
     background: url(../images/logos/purewaste_black.png)no-repeat center/80% auto,
        linear-gradient(#FFFFFF,#FFFFFF) center/$secondary-bg-size no-repeat;
-  }
-  
+  } 
   &.fruitkit {
     background: url(../images/logos/fruitkit.png)no-repeat center/80% auto,
+       center/$secondary-bg-size no-repeat;
+  } 
+  &.uploadcare {
+    background: url(../images/logos/uploadcare.png)no-repeat center/80% auto,
        center/$secondary-bg-size no-repeat;
   }
 }
@@ -615,10 +618,18 @@ hr.article-divider{
       align-items: center;
     }
 
-    &.if, &.solu, &.op,&.tter {
+    &.if, &.solu, &.op,&.tter,&.startuplife {
       img {
-        height: 65%;
+        height: 85%;
         width: auto;
+      }
+    }
+	
+	&.purewaste {
+      img {
+		width: 90%;
+        height: auto;
+        
       }
     }
 
