@@ -551,6 +551,10 @@ hr.article-divider{
     background: url(../images/logos/uploadcare.png)no-repeat center/80% auto,
        center/$secondary-bg-size no-repeat;
   }
+  &.johanochnystrom {
+    background: url(../images/logos/johanetnystrom.png)no-repeat center/80% auto,
+       linear-gradient(#FFFFFF,#FFFFFF) center/$secondary-bg-size no-repeat;
+  }
 }
 
 .partner-logos {
