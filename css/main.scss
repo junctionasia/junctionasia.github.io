@@ -557,6 +557,36 @@ hr.article-divider{
   }
 }
 
+
+.logo-span{
+	height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo-div {
+    height: 170px;
+}
+.logo-div a:hover {
+  text-decoration:none;
+}
+
+.logo-div img{
+   width:80%;
+   height:auto;
+   max-height:170px;
+   vertical-align:middle;
+
+    &.if, &.solu, &.op,&.supercell,&.startuplife {
+        height: auto;
+		width:70%;
+    }
+	
+	&.tter {
+		height: 80%;
+		width: auto; 
+    }
+}
+
 .partner-logos {
   max-width: 750px;
   margin: 0 auto;
@@ -622,20 +652,7 @@ hr.article-divider{
       align-items: center;
     }
 
-    &.if, &.solu, &.op,&.tter,&.startuplife {
-      img {
-        height: 85%;
-        width: auto;
-      }
-    }
-	
-	&.purewaste {
-      img {
-		width: 90%;
-        height: auto;
-        
-      }
-    }
+
 
   }
 }
