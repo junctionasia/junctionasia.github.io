@@ -7,5 +7,3 @@ build/
 .sass-cache/
 .DS_Store
 _site/
-slideshow.html
-_layouts/slide.html
