@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Junction brings together people who want to build things for one weekend of hacking.
   Charge your laptops and bring your friends for an amazing event. Let's hack!
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://github.com/junctionasia/junctionasia.github.io" # the base hostname & protocol for your site
+url: "https://junctionasia.github.io" # the base hostname & protocol for your site
 twitter_username: hackjunction
 github_username:  junctionasia
 
