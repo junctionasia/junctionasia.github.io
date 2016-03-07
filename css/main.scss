@@ -100,13 +100,13 @@ hr.article-divider{
 
 .navbar-custom {
   .container {
-
-  }
-  margin-bottom: 0;
+     margin-bottom: 0;
   border-bottom: 1px solid transparentize($grayscale-light, 0.7);
   text-transform: uppercase;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
   background-color: $grayscale-dark !important;
+
+  }
 
   .navbar-brand {
     font-weight: 700;
@@ -125,7 +125,13 @@ hr.article-divider{
         outline: none;
       }
     }
+        .navbar-logo {
+      height: auto;
+      max-height: 50px;
+
+}
   }
+
 
   a {
     color: $grayscale-light;
@@ -267,7 +273,7 @@ hr.article-divider{
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); /* centering hack */
     width: 80%;
-    max-width: 350px;
+    max-width: 200px;
 
     img {
       width: 100%;

@@ -16,3 +16,8 @@ Start up Jekyll with (default port 4000):
 
 Start livereload with guard:
 `guard`
+
+
+Need to update 
+<head> og:url
+Also opengraph.jpg for og:image
