@@ -153,9 +153,12 @@ hr.article-divider{
 }
 
 .header_logo{
+    margin-top: 200px;
+    /*
     position: absolute;
     top: 30%;
     margin-top: -1em;
+    */
 }
 
 .aboutus{
@@ -171,7 +174,7 @@ hr.article-divider{
 
 #first  {
     height: 700px;
-    background: url(/images/production/firstsite_bg.png) 100% 0 no-repeat fixed;
+    background: url(/images/production/firstsite_bg_60.png) 100% 0 no-repeat fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -181,14 +184,14 @@ hr.article-divider{
 
 #second { }
 #third  {
-    background: url(/images/production/about_bg_2.png) 100% 0 no-repeat fixed #000;
+    background: url(/images/production/about_bg_60.png) 100% 0 no-repeat fixed #000;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
     position: relative;
 }
 #fifth  {
-    background: url(/images/production/aboutus_bg_2.png) 100% 0 no-repeat fixed #000;
+    background: url(/images/production/aboutus_bg_50.png) 100% 0 no-repeat fixed #000;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -196,7 +199,7 @@ hr.article-divider{
     position: relative;
 }
 #seventh  {
-    height: 600px;
+    height: 700px;
     background: url(/images/production/register.png) 100% 0 no-repeat fixed #000;
     -webkit-background-size: cover;
     background-size: cover;
