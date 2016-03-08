@@ -1,8 +1,8 @@
-# JunctionAsia
+# Junction Asia
 
 
 We're making a website
-
+@ junction.asia
 
 ![Funny gif](http://tclhost.com/kl4hqj8.gif)
 
