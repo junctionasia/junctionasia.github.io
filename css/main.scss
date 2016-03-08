@@ -50,9 +50,8 @@ body{
 
 h1, h2, h3, h4 {
   font-family: $headline-font-family;
-  margin-top: 1.2em;
+  margin-top: 2em;
   margin-bottom: 0.5em;
-
 }
 
 article h2 {
@@ -322,14 +321,13 @@ input[type="button"]:hover {
 .movie-wrap {
     position: relative;
     padding-bottom: 56.25%;
-    padding-top: 30px;
+    padding-top: 100px;
     height: 0;
     overflow: hidden;
     align-items: center;
 }
 
 .movie-wrap iframe {
-    padding: 100px 100px 100px 100px;
     position: absolute;
     top: 0;
     left: 0;
