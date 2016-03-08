@@ -50,8 +50,17 @@ body{
 
 h1, h2, h3, h4 {
   font-family: $headline-font-family;
-  margin-top: 2em;
+  margin-top: 1.2em;
   margin-bottom: 0.5em;
+
+}
+
+.discription{
+    color: #fff;
+}
+
+.japanese {
+    font-family: “游明朝”, YuMincho, “ヒラギノ明朝 ProN W3”, “Hiragino Mincho ProN”, “HG明朝E”, “メイリオ”, Meiryo, serif;
 }
 
 article h2 {
@@ -67,27 +76,11 @@ hr.article-divider{
   text-align: center;
 }
 
-// general containers
-
-.content-section {
-  //padding-top: 50px;
-  //padding-bottom: 50px;
-}
-
 .container.first {
   margin-top: 80px;
 }
 
 // general buttons
-
-.btn, .btn:hover, .btn:active {
-  background-color: transparent;
-  border: 3px solid white;
-  border-radius: 0;
-  color:white;
-  padding: 0 6px;
-}
-
 
 
 @media(min-width:$screen-xs-max) {
@@ -119,45 +112,9 @@ hr.article-divider{
   }
 }
 
-
-
-#social {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: rgb(28, 28, 28);
-
-  a {
-    opacity: 0.8;
-    transition: opacity 0.1s ease-out;
-    &:hover {
-      opacity: 1;
-    }
-  }
-
-  img {
-    height: 50px;
-    padding: 10px;
-    display: inline-block;
-
-    &:hover {
-      -webkit-filter: brightness(200%);
-    }
-  }
-
-  .contact {
-    color: #aaa;
-    margin-top: 25px;
-  }
-}
-
+/* First Site */
 .header_logo{
     margin-top: 200px;
-    /*
-    position: absolute;
-    top: 30%;
-    margin-top: -1em;
-    */
 }
 
 .aboutus{
@@ -166,7 +123,8 @@ hr.article-divider{
     padding-top:240px;
 }
 
-// parallax
+
+/* parallax */
 .content {
   position: relative;
 }
@@ -181,7 +139,25 @@ hr.article-divider{
     position: relative;
 }
 
-#second { }
+#first:before {
+  content: "";
+  position: absolute;
+  height: 300px;
+  width: 300%;
+  background: $darker-gray;
+  bottom: -200px;
+  left: -100%;
+  -webkit-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+#second{
+    position: relative;
+    height: 50%;
+}
+
 #third  {
     background: url(/images/production/about_bg_60.png) 100% 0 no-repeat fixed #000;
     -webkit-background-size: cover;
@@ -208,28 +184,9 @@ hr.article-divider{
 }
 
 
-#first:before {
-  content: "";
-  position: absolute;
-  height: 300px;
-  width: 300%;
-  background: $darker-gray;
-  bottom: -200px;
-  left: -100%;
-  -webkit-transform: rotate(5deg);
-  -ms-transform: rotate(5deg);
-  -o-transform: rotate(5deg);
-  transform: rotate(5deg);
-}
 
 
-/* BLOCK2 */
-#second{
-    position: relative;
-    height: 50%;
-}
-
-
+/* Tilt */
 .block2 {
   position: relative;
   height: 50%;
@@ -240,9 +197,6 @@ hr.article-divider{
   top: 45%;
 }
 
-
-
-/* BLOCK3 */
 .block3 {
     height: 560px;
     width: 100%;
@@ -279,10 +233,9 @@ hr.article-divider{
   transform: rotate(5deg);
 }
 
-.discription{
-    color: #fff;
-}
 
+
+/* Form */
 input[type="text"] {
     margin-top: 60px;
     height: 40px;
@@ -318,16 +271,18 @@ input[type="button"]:hover {
     color: #1abc9c;
 }
 
+/* Movie */
 .movie-wrap {
     position: relative;
     padding-bottom: 56.25%;
-    padding-top: 100px;
+    padding-top: 30px;
     height: 0;
     overflow: hidden;
     align-items: center;
 }
 
 .movie-wrap iframe {
+    padding: 100px 100px 100px 100px;
     position: absolute;
     top: 0;
     left: 0;
@@ -336,9 +291,40 @@ input[type="button"]:hover {
     align-items: center;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: $darker-gray;
+}
+
+#social {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: rgb(28, 28, 28);
+
+  a {
+    opacity: 0.8;
+    transition: opacity 0.1s ease-out;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  img {
+    height: 50px;
+    padding: 10px;
+    display: inline-block;
+
+    &:hover {
+      -webkit-filter: brightness(200%);
+    }
+  }
+
+  .contact {
+    color: #aaa;
+    margin-top: 25px;
+  }
 }
