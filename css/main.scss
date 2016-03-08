@@ -46,7 +46,7 @@ h1, h2, h3, h4 {
   font-family: $headline-font-family;
   margin-top: 1.2em;
   margin-bottom: 0.5em;
-
+  line-height:1.5
 }
 
 .discription{
@@ -125,7 +125,7 @@ hr.article-divider{
 }
 
 #third  {
-    background: url(/images/production/about_bg_60.png) 100% 0 no-repeat fixed #000;
+    background: url(/images/production/about_bg_75.png) 100% 0 no-repeat fixed #000;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -141,7 +141,7 @@ hr.article-divider{
 }
 #seventh  {
     height: 700px;
-    background: url(/images/production/register_bg.png) 100% 0 no-repeat fixed #000;
+    background: url(/images/production/register_75.png) 100% 0 no-repeat fixed #000;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
