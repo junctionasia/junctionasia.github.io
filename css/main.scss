@@ -34,17 +34,11 @@ body{
   font-family: $body-font-family;
   font-size: 16px;
   font-weight: 300;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
 }
 
 
 @media(min-width:$screen-xs-max) {
-  .about-introduction{
-    padding: 0 60px;
-  }
+
 }
 
 
@@ -61,7 +55,7 @@ h1, h2, h3, h4 {
 }
 
 .japanese {
-    font-family: "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro";
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
     font-weight: lighter;
     -webkit-font-smoothing: antialiased;
 }
@@ -83,37 +77,6 @@ hr.article-divider{
   margin-top: 80px;
 }
 
-// general buttons
-
-
-@media(min-width:$screen-xs-max) {
-  .intro {
-    height: 90vh;
-    margin-top: 90px;
-
-    .intro-body {
-
-      .junction-text {
-        margin: 50px auto 75px auto;
-        max-width: 500px;
-      }
-
-      .junction-subtitle {
-        margin: 0 17px;
-        font-size: 34px;
-        font-family: 'Raleway';
-        margin-top: -30px;
-      }
-
-      .date {
-        .btn{
-          margin-left: 20px;
-        }
-
-      }
-    }
-  }
-}
 
 /* First Site */
 .header_logo{
