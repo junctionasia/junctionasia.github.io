@@ -60,7 +60,9 @@ h1, h2, h3, h4 {
 }
 
 .japanese {
-    font-family: “游明朝”, YuMincho, “ヒラギノ明朝 ProN W3”, “Hiragino Mincho ProN”, “HG明朝E”, “メイリオ”, Meiryo, serif;
+    font-family: "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro";
+    font-weight: lighter;
+    -webkit-font-smoothing: antialiased;
 }
 
 article h2 {
