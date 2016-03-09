@@ -49,12 +49,8 @@ h1, h2, h3, h4 {
   line-height:1.5
 }
 
-h3 {
-    font-size: 24px;
-}
-
-h4 {
-    font-size: 24px;
+h3 h4 {
+    font-size: 18px;
 }
 
 .discription{
@@ -93,7 +89,7 @@ hr.article-divider{
 
 .aboutus{
     color: #fff;
-    font-size: 64px;
+    font-size: 48px;
     padding-top:240px;
 }
 
@@ -105,7 +101,7 @@ hr.article-divider{
 
 #first  {
     height: 700px;
-    background: url(/images/production/firstsite_bg_60.png) 100% 0 no-repeat fixed;
+    background: url(/images/production/firstsite_bg_60.png) 100% 0 no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -133,14 +129,14 @@ hr.article-divider{
 }
 
 #third  {
-    background: url(/images/production/about_bg_75.png) 100% 0 no-repeat fixed #000;
+    background: url(/images/production/about_bg_75.png) 100% 0 no-repeat #000;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
     position: relative;
 }
 #fifth  {
-    background: url(/images/production/aboutus_bg_50.png) 100% 0 no-repeat fixed #000;
+    background: url(/images/production/aboutus_bg_50.png) 100% 0 no-repeat #000;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -149,7 +145,7 @@ hr.article-divider{
 }
 #seventh  {
     height: 700px;
-    background: url(/images/production/register_75.png) 100% 0 no-repeat fixed #000;
+    background: url(/images/production/register_75.png) 100% 0 no-repeat #000;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
