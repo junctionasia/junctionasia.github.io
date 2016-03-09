@@ -115,6 +115,8 @@ hr.article-divider{
     background-position: center center;
     overflow: hidden;
     position: relative;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
 }
 
 #first:before {
@@ -142,6 +144,8 @@ hr.article-divider{
     background-size: cover;
     background-position: center center;
     position: relative;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
 }
 #fifth  {
     background: url(/images/production/aboutus_bg_50.png) 100% 0 no-repeat fixed #000;
@@ -150,6 +154,8 @@ hr.article-divider{
     background-position: center center;
     overflow: hidden;
     position: relative;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
 }
 #seventh  {
     height: 700px;
@@ -159,6 +165,8 @@ hr.article-divider{
     background-position: center center;
     overflow: hidden;
     position: relative;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
 }
 
 
