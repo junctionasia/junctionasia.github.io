@@ -87,6 +87,11 @@ hr.article-divider{
     margin-top: 200px;
 }
 
+/* supported by FabCafe */
+.supportedByFabCafe{
+    width: 80%;
+}
+
 .aboutus{
     color: #fff;
     font-size: 48px;
