@@ -8,7 +8,7 @@ function appendRow(){
         return atom;
     };
 
-    token = "ya29.ogKXckmQKBsYM_oXBwoh8S0fCAmTpWhqXrqlE_7IWepleIzOALIfOxsqQx_Hzp_epQ"
+    token = "ya29.ogKUnoDsp6r9qm1_dhnZ9ThVjTWnoE-POUnr3UCpUBZp9SuJ7Kc4x6djfI00Ng4uOA"
 
     var params = constructAtomXML(email);
     spreadsheetId = '18zbjMH8OzeTaqWzeLEyEU2_bL7Xg9-dO844kF41SDNU';
@@ -20,10 +20,10 @@ function appendRow(){
     z.setRequestHeader("GData-Version", "3.0");
     z.setRequestHeader("Authorization", 'Bearer '+ token);
     z.setRequestHeader("Access-Control-Allow-Origin", "*");
-    z.onreadystatechange = function() {//Call a function when the state changes.
+    z.onreadystatechange = function() {     //Call a function when the state changes.
         if(z.readyState == 4 && z.status == 200) {
             alert(z.responseText);
         }
     }
-    z.send(params); 
+    z.send(params);
 }
