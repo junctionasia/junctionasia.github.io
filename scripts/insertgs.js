@@ -19,7 +19,7 @@ function appendRow(){
     z.setRequestHeader("Content-type", "application/atom+xml");
     z.setRequestHeader("GData-Version", "3.0");
     z.setRequestHeader("Authorization", 'Bearer '+ token);
-    z.setRequestHeader("Access-Control-Allow-Origin", "*");
+    z.setRequestHeader("Access-Control-Allow-Origin", "http://junctionasia.github.io/");
     z.onreadystatechange = function() {     //Call a function when the state changes.
         if(z.readyState == 4 && z.status == 200) {
             alert(z.responseText);
