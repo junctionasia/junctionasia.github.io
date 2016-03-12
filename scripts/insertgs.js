@@ -36,6 +36,7 @@ function send_mail(){
     // Gmailのアカウントを設定 (★以下を書き換えてください★)
     var gmail_user = "naoto.shibata510@gmail.com"; // Gmailのメールアドレス
     var gmail_pass = "060510shiba"; // Gmailのパスワード
+    console.log('hhhhh');
     //-------------------------------------------------------------------
     // 送信内容の設定(★以下を書き換えてください★)
     var msg = WScript.CreateObject("CDO.Message");
