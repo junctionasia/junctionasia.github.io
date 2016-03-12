@@ -172,6 +172,17 @@ hr.article-divider{
     backface-visibility:hidden;
     webkit-transform: translateZ;
 }
+#eight {
+  background: url(/images/production/about_bg_50.png) 100% 0 no-repeat fixed #000;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  webkit-transform: translateZ;
+}
 
 
 
