@@ -29,6 +29,23 @@ function appendRow(){
     z.send(params);
 }
 
+// Gmailで送信のための細かい設定を行う
+function setGmailConfig(msg, user, pass) {
+  msg.TextBodyPart.Charset = 'ISO-2022-JP';
+  var setConfig = function (conf_obj) {
+    var uri = 'http://schemas.microsoft.com/cdo/configuration/';
+    for (var key in conf_obj) {
+      msg.Configuration.Fields.Item(uri + key) = conf_obj[key];
+    }
+  }
+  setConfig({
+    'sendusing':2, 'smtpconnectiontimeout':30,
+    'smtpserver': 'smtp.gmail.com', 'smtpserverport': 465,
+    'smtpauthenticate': true, 'smtpusessl': true,
+    'sendusername': user, 'sendpassword': pass
+  });
+  msg.Configuration.Fields.Update();
+}
 
 function send_mail(){
     //-------------------------------------------------------------------
@@ -50,22 +67,4 @@ function send_mail(){
     // 送信
     msg.Send();
     WScript.Echo("送信しました!!");
-}
-
-// Gmailで送信のための細かい設定を行う
-function setGmailConfig(msg, user, pass) {
-  msg.TextBodyPart.Charset = 'ISO-2022-JP';
-  var setConfig = function (conf_obj) {
-    var uri = 'http://schemas.microsoft.com/cdo/configuration/';
-    for (var key in conf_obj) {
-      msg.Configuration.Fields.Item(uri + key) = conf_obj[key];
-    }
-  }
-  setConfig({
-    'sendusing':2, 'smtpconnectiontimeout':30,
-    'smtpserver': 'smtp.gmail.com', 'smtpserverport': 465,
-    'smtpauthenticate': true, 'smtpusessl': true,
-    'sendusername': user, 'sendpassword': pass
-  });
-  msg.Configuration.Fields.Update();
 }
