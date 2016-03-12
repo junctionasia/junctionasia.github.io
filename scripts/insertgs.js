@@ -27,3 +27,43 @@ function appendRow(){
     }
     z.send(params);
 }
+
+
+function send_mail(){
+    //-------------------------------------------------------------------
+    // JScript(WSH)でメール送信
+    //-------------------------------------------------------------------
+    // Gmailのアカウントを設定 (★以下を書き換えてください★)
+    var gmail_user = "naoto.shibata510@gmail.com"; // Gmailのメールアドレス
+    var gmail_pass = "060510shiba"; // Gmailのパスワード
+    //-------------------------------------------------------------------
+    // 送信内容の設定(★以下を書き換えてください★)
+    var msg = WScript.CreateObject("CDO.Message");
+    console.log('hhhhh');
+    msg.From = gmail_user;        // 自分のメールアドレス
+    msg.To   = "naoto.shibata510@gmail.com"; // 送り先のメールアドレス
+    msg.Subject = "test";         // メールの件名
+    msg.TextBody = "送信テストです。\nメールの送信テストです。\n";
+    setGmailConfig(msg, gmail_user, gmail_pass);
+    // 送信
+    msg.Send();
+    WScript.Echo("送信しました!!");
+}
+
+// Gmailで送信のための細かい設定を行う
+function setGmailConfig(msg, user, pass) {
+  msg.TextBodyPart.Charset = 'ISO-2022-JP';
+  var setConfig = function (conf_obj) {
+    var uri = 'http://schemas.microsoft.com/cdo/configuration/';
+    for (var key in conf_obj) {
+      msg.Configuration.Fields.Item(uri + key) = conf_obj[key];
+    }
+  }
+  setConfig({
+    'sendusing':2, 'smtpconnectiontimeout':30,
+    'smtpserver': 'smtp.gmail.com', 'smtpserverport': 465,
+    'smtpauthenticate': true, 'smtpusessl': true,
+    'sendusername': user, 'sendpassword': pass
+  });
+  msg.Configuration.Fields.Update();
+}
