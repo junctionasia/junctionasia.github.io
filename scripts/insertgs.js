@@ -1,4 +1,5 @@
 function appendRow(){
+    console.log("aaaa");
     var email = $('#form_email').val();
     function constructAtomXML(email){
         var atom = ["<?xml version='1.0' encoding='UTF-8'?>",
