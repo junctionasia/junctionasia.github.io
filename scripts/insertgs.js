@@ -14,3 +14,4 @@ function send_mail(){
          }
     });
 }
+
