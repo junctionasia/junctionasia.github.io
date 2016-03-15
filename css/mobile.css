@@ -234,6 +234,22 @@ input[type="text"]:focus {
 	border: 2px solid #1abc9c;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+    margin-top: 60px;
+    height: 40px;
+    width: 400px;
+}
+select#country:focus {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: 0 0 7px #1abc9c;
+  border: 2px solid #1abc9c;
+}
+
 .send_button {
     margin-top: 20px;
     height: 40px;
