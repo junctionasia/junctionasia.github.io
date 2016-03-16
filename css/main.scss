@@ -160,7 +160,7 @@ hr.article-divider{
     backface-visibility:hidden;
     webkit-transform: translateZ;
 }
-/*#seventh  {
+#seventh  {
     height: 700px;
     background: url(/images/production/register_75.png) 100% 0 no-repeat fixed #000;
     -webkit-background-size: cover;
@@ -171,7 +171,7 @@ hr.article-divider{
     -webkit-backface-visibility:hidden;
     backface-visibility:hidden;
     webkit-transform: translateZ;
-}*/
+}
 #eight {
   background: url(/images/production/about_bg_50.png) 100% 0 no-repeat fixed #000;
   -webkit-background-size: cover;
@@ -224,7 +224,7 @@ hr.article-divider{
 .block3:after {
   content: "";
   position: absolute;
-  height: 300px;
+  height: 200px;
   width: 300%;
   background: $darker-gray;
   top: 500px;

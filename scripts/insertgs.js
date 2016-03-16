@@ -16,3 +16,10 @@ function send_mail(){
     });
 }
 
+
+$.getJSON('../country.json', function(json){
+    countries = json.country;
+    for (var i = countries.length - 1; i >= 0; i--) {
+        $('select#country').append($('<option>').html(countries[i]).val(countries[i]));
+    }
+});
