@@ -3,7 +3,8 @@ function send_mail(){
     name = $('input[id=form_email]').val();
     country = $('input[id=name]').val();
     $('input[id=from_email]').val("");
-    url = "http://ec2-52-192-39-102.ap-northeast-1.compute.amazonaws.com/mail?body=" + mail_address + + "&name=" + name + "&country=" + country;
+    $('input[class=send_button]').val("Thank you!")
+    url = "http://ec2-52-192-39-102.ap-northeast-1.compute.amazonaws.com/mail?body=" + mail_address + + "&name=" + name;
     $.ajax({
          url: url,
          dataType: 'json',
