@@ -1,14 +1,14 @@
 # Site settings
-title: Junction Asia Hackathon
-email: junctionasia@gmail.com
+title: Junction Hackathon
+email: keke@aatoes.com
 description: > # this means to ignore newlines until "baseurl:"
-  Come join us at Junction Asia to learn something new, build an app or start a company.
+  Come join us at Junction to learn something new, build an app or start a company.
   Junction brings together people who want to build things for one weekend of hacking.
   Charge your laptops and bring your friends for an amazing event. Let's hack!
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://junctionasia.github.io" # the base hostname & protocol for your site
+url: "http://hackjunction.com" # the base hostname & protocol for your site
 twitter_username: hackjunction
-github_username:  junctionasia
+github_username:  kekeblom
 
 # Build settings
 markdown: kramdown
