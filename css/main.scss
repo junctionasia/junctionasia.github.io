@@ -90,6 +90,24 @@ hr.article-divider{
     padding-top:240px;
 }
 
+/*Google iframe*/
+
+.google-maps {
+   position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+.google-maps iframe, .google-maps object, .google-maps embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 /* supported by FabCafe */
 .supportedByFabCafe{
     width: 40%;
@@ -145,8 +163,8 @@ hr.article-divider{
     background-size: cover;
     background-position: center center;
     position: relative;
-    -webkit-backface-visibility:hidden;
-    backface-visibility:hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     webkit-transform: translateZ;
 }
 #fifth  {
@@ -156,8 +174,8 @@ hr.article-divider{
     background-position: center center;
     overflow: hidden;
     position: relative;
-    -webkit-backface-visibility:hidden;
-    backface-visibility:hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     webkit-transform: translateZ;
 }
 #seventh  {
@@ -168,12 +186,12 @@ hr.article-divider{
     background-position: center center;
     overflow: hidden;
     position: relative;
-    -webkit-backface-visibility:hidden;
-    backface-visibility:hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     webkit-transform: translateZ;
 }
-#eight {
-  background: url(/images/production/about_bg_50.png) 100% 0 no-repeat fixed #000;
+/*# {
+  background: url() 100% 0 no-repeat fixed #000;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
@@ -182,7 +200,7 @@ hr.article-divider{
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   webkit-transform: translateZ;
-}
+}*/
 
 
 

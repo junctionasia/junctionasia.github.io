@@ -3,8 +3,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="./scripts/main.js"></script>
 <script src="./scripts/insertgs.js"></script>
-<script src="./scripts/button.js"></script>
 <script src="{{ "/dist/build.js" | prepend: site.baseurl }}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS6leQ9BCSIwBzcKTPRIH22f9AVQGfXqc&callback=initMap"
+         async defer></script>
+<script src="./scripts/googlemap.js"></script>
 
 <!-- Custom Audience Pixel Code -->
 <script>
@@ -33,3 +35,18 @@ src="https://www.facebook.com/tr?id=1631994330410383&ev=PageView&noscript=1"
   ga('send', 'pageview');
 
 </script>
+<div id="social">
+    <a href="http://aaltoes.com" target="_blank">
+        <img src="{{ "/images/logos/icon_aaltoes.png" | prepend: site.baseurl }}" alt="">
+    </a>
+    <a href="https://facebook.com/hackjunction" target="_blank">
+        <img src="{{ "/images/logos/svg_icon_facebook.svg" | prepend: site.baseurl }}" alt="">
+    </a>
+    <a href="https://twitter.com/junctionasia" target="_blank">
+        <img src="{{ "/images/logos/svg_icon_twitter.svg" | prepend: site.baseurl }}" alt="">
+    </a>
+    <br>
+    <p class='contact'>
+       Contact: <a href='mailto:junctionasia@gmail'>junctionasia@gmail.com</a>
+    </p>
+</div>
