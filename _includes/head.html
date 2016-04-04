@@ -35,7 +35,7 @@
   {% if page and page.fb_meta_image %}
     <meta property="og:image" content="{{ page.fb_meta_image | prepend: site.baseurl | prepend:site.url }}" />
   {% else %}
-  <meta property="og:image" content="{{ "/images/opengraph.jpg" | prepend: site.baseurl | prepend:site.url }}" />
+  <meta property="og:image" content="{{ "/images/production/opengraph.jpg" | prepend: site.baseurl | prepend:site.url }}" />
 
   {% endif %}
 
