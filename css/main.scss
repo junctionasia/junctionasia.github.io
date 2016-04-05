@@ -90,6 +90,79 @@ hr.article-divider{
     padding-top:240px;
 }
 
+.pastpartners {
+  color: #fff;
+  font-size: 64px;
+  padding-top: 240px;
+}
+
+.partners {
+  color: #fff;
+  font-size: 64px;
+  padding-top: 240px;
+}
+
+.mentoring-partners {
+  color: #fff;
+  font-size: 64px;
+  padding-top: 240px;
+}
+
+/*Logo */
+.logo-span{
+  height: 70%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo-div {
+    height: 170px;
+    padding-left: 50px;
+}
+.logo-div a:hover {
+  text-decoration:none;
+}
+
+.logo-div a {
+  text-decoration:none;
+}
+
+.logo-div img{
+   width:80%;
+   height:auto;
+   max-height:170px;
+   vertical-align:middle;
+
+    &.if, &.solu, &.op,&.supercell,&.startuplife {
+        height: auto;
+    width:70%;
+    }
+    .partner-logos {
+  max-width: 750px;
+  margin: 0 auto;
+
+  .logo-row {
+    margin: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+            justify-content: space-around;
+    width: 100%;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+}
+}
+
+
 /*Google iframe*/
 
 .google-maps {
@@ -190,8 +263,8 @@ hr.article-divider{
     backface-visibility: hidden;
     webkit-transform: translateZ;
 }
-/*# {
-  background: url() 100% 0 no-repeat fixed #000;
+#partners {
+  background: url(/images/production/shaded-partners.jpg) 100% 0 no-repeat fixed #000;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
@@ -200,11 +273,43 @@ hr.article-divider{
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   webkit-transform: translateZ;
-}*/
+}
 
+#pastpartners {
+  background: url(/images/production/shaded-pastpartners.jpg) 100% 0 no-repeat fixed #000;
+  -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    webkit-transform: translateZ;
+}
 
+#partners {
+  background: url(/images/production/shaded-partners.jpg) 100% 0 no-repeat fixed #000;
+ -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    webkit-transform: translateZ;
+}
 
-
+#mentoring-partners {
+    background: url(/images/production/shaded-mentoring-partners.jpg) 100% 0 no-repeat fixed #000;
+ -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    webkit-transform: translateZ;
+}
 
 /* Tilt */
 .block2 {
@@ -233,10 +338,6 @@ hr.article-divider{
   background: $darker-gray;
   top: -200px;
   left: -100%;
-  -webkit-transform: rotate(5deg);
-  -ms-transform: rotate(5deg);
-  -o-transform: rotate(5deg);
-  transform: rotate(5deg);
 }
 
 .block3:after {
@@ -247,14 +348,42 @@ hr.article-divider{
   background: $darker-gray;
   top: 500px;
   left: -100%;
-  -webkit-transform: rotate(5deg);
-  -ms-transform: rotate(5deg);
-  -o-transform: rotate(5deg);
-  transform: rotate(5deg);
 }
 
+.block4 {
+  height: 560px;
+    width: 100%;
+    -webkit-background-size: cover;
+    position: relative;
+}
 
+.block4:before {
+  content: "";
+  position: absolute;
+  height: 300px;
+  width: 300%;
+  background: $darker-gray;
+  top: -200px;
+  left: -100%;
+  -webkit-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
 
+.block4:after {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 300%;
+  background: $darker-gray;
+  top: 500px;
+  left: -100%;
+  -webkit-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
 /* Form */
 input[type="text"] {
     margin-top: 60px;
@@ -316,15 +445,15 @@ input[type="text"]:focus {
 /* Movie */
 .movie-wrap {
     position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 60px;
+    padding-bottom: 50%;
+    padding-top: 50px;
     height: 0;
     overflow: hidden;
     align-items: center;
 }
 
 .movie-wrap iframe {
-    padding: 10px 10px 10px 10px;
+    padding: 10px 0px 10px 10px;
     position: absolute;
     top: 0;
     left: 0;
@@ -359,7 +488,6 @@ footer {
     height: 50px;
     padding: 10px;
     display: inline-block;
-
     &:hover {
       -webkit-filter: brightness(200%);
     }
@@ -370,3 +498,4 @@ footer {
     margin-top: 25px;
   }
 }
+
