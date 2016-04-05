@@ -306,6 +306,62 @@ $apply-color-hover: #EFEA3A;
 
 }
 
+/* FAQ */
+
+.text-content {
+  h1 {
+    margin-top: 50px;
+  }
+
+  h4{
+    margin-top: 50px;
+    text-align: left;
+    color: $apply-color;
+  }
+
+  p{
+    text-align: left;
+  }
+}
+
+
+#prizes {
+  h4, p {
+    text-align: center;
+  }
+
+}
+
+.schedule {
+  h3 {
+    font-weight: bold;
+  }
+  .table {
+    text-align: left;
+    font-size: 20px;
+  &.hardware tbody td{
+
+      padding-left:30px;
+
+  }
+    td:nth-child(1) {
+      width: 12%;
+      min-width: 50px;
+    }
+    td:last-child {
+      width: 15%;
+      min-width: 75px;
+    }
+  }
+
+  thead {
+    font-weight: bold;
+    color: $apply-color;
+    border-bottom: 2px solid $apply-color;
+  }
+}
+
+
 /*Google iframe*/
 
 .google-maps {
