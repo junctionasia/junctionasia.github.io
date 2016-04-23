@@ -559,12 +559,12 @@ $apply-color-hover: #EFEA3A;
       linear-gradient(#fff, #fff) center/$secondary-bg-size no-repeat;
   }
   &.softbank {
-    background: url(../images/logos/softbank-logo.png)no-repeat center/$primary-bg-size,
+    background: url(../images/logos/softbankgroup-logo.png)no-repeat center/auto 100%,
       linear-gradient(#fff, #fff) center/$secondary-bg-size no-repeat;
   }
-  &.ibm {
-    background: url(../images/logos/ibm-white-logo.png)no-repeat center/$primary-bg-size,
-      linear-gradient(#0089CF, #0089CF) center/$secondary-bg-size no-repeat;
+  &.nec-intel-lenovo {
+    background: url(../images/logos/nec-intel-lenovo-logo.jpg)no-repeat center/$primary-bg-size,
+      linear-gradient(#fff, #fff) center/$secondary-bg-size no-repeat;
   }
   &.question {  
    background: url(../images/logos/question-mark.jpg)no-repeat center/$primary-bg-size,
@@ -893,6 +893,6 @@ footer {
 #softbank-modal .modal-content{
   background-color: white;
 }
-#ibm-modal .modal-content{
+#nec-intel-lenovo-modal .modal-content{
   background-color: #0089CF;
 }
