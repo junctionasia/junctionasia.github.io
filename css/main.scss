@@ -559,7 +559,7 @@ $apply-color-hover: #EFEA3A;
       linear-gradient(#fff, #fff) center/$secondary-bg-size no-repeat;
   }
   &.softbank {
-    background: url(../images/logos/softbankgroup-logo.png)no-repeat center/auto 100%,
+    background: url(../images/logos/softbankgroup-logo.png)no-repeat center/100% auto,
       linear-gradient(#fff, #fff) center/$secondary-bg-size no-repeat;
   }
   &.nec-intel-lenovo {
