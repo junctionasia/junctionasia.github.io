@@ -814,6 +814,10 @@ footer {
     margin-bottom: 40px;
   }
 
+  &.partner-text{
+    height: 320.5px;
+  }
+
   &.fabcafe{
     background:url(../images/production/FabCafeLogo.png) no-repeat center/auto ;
   }
@@ -836,6 +840,11 @@ footer {
   &.slushasia{
     background:url(../images/logos/White_RGB_ForDigitalUse.png) no-repeat center/80% auto,
        center/$secondary-bg-size no-repeat;
+  }
+
+  &.unity{
+    background: url(../images/logos/unity.png) no-repeat center/80% auto,
+      center/$secondary-bg-size no-repeat;
   }
 }
 
