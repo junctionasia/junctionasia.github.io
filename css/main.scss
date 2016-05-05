@@ -536,6 +536,12 @@ $apply-color-hover: #EFEA3A;
     webkit-transform: translateZ;
 }
 
+.surrounding{
+  background-color: #0f0e0c;
+  width: 320px;
+  height: 300px;
+}
+
 /*TRACKS*/
 
 .track-box{
@@ -565,6 +571,114 @@ $apply-color-hover: #EFEA3A;
   &.nec-intel-lenovo {
     background: url(../images/logos/nec-intel-lenovo-logo.jpg)no-repeat center/$primary-bg-size,
       linear-gradient(#fff, #fff) center/$secondary-bg-size no-repeat;
+  }
+  &.stratasys {
+    width: 100%;
+    height: 100.5px;
+    background: url(../images/logos/sys.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
+  }
+  &.terrada {
+    width: 90%;
+    height: 100.5px;
+    background: url(../images/logos/terrada-logo.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
+  }
+  &.makerbot {
+    width: 100%;
+    height: 100.5px;
+    background: url(../images/logos/mb-white-logo.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
+  }
+  &.tmcn {
+    width: 100%;
+    height: 100.5px;
+    background: url(../images/logos/tmcn.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
+  }
+  &.trotec {
+    width: 100%;
+    height: 100.5px;
+    background: url(../images/logos/trotec-logo.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
+  }
+  &.gausstoys {
+    width: 100%;
+    height: 100.5px;
+    background: url(../images/logos/gausstoys.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
+  }
+  &.unity {
+    width: 90%;
+    height: 100.5px;
+    background: url(../images/logos/unity.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
+  }
+  &.accenture {
+    width: 100%;
+    height: 100.5px;
+    background: url(../images/logos/Accenture.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
+  }
+  &.cerevo {
+    width: 100%;
+    height: 100.5px;
+    background: url(../images/logos/cerevo-logo.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
+  }
+  &.docomo {
+    width: 90%;
+    height: 90.5px;
+    background: url(../images/logos/docomo-logo.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
+  }
+  &.ibm {
+    width: 90%;
+    height: 90.5px;
+    background: url(../images/logos/ibm.jpg)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
+  }
+  &.makuake {
+    width: 100%;
+    height: 100.5px;
+    background: url(../images/logos/makuake_tate.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
+  }
+  &.quantum {
+    width: 100%;
+    height: 100.5px;
+    background: url(../images/logos/quantum-logo.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
+  }
+  &.raksul {
+    width: 100%;
+    height: 100.5px;
+    background: url(../images/logos/raksul-logo.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
+  }
+  &.happyprinters {
+    width: 100%;
+    height: 100.5px;
+    background: url(../images/logos/happyprinters-logo.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
+  }
+  &.pizzahut {
+    width: 300px;
+    height: 100.5px;
+    background: url(../images/logos/pizzahut.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
+  }
+  &.reaktor {
+    width: 100%;
+    height: 100.5px;
+    background: url(../images/logos/reaktor.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
+  }
+  &.fabcafe {
+    width: 130%;
+    height: 130.5px;
+    background: url(../images/production/FabCafeLogo.png)no-repeat center/$primary-bg-size,
+      linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
   }
   &.question {
    background: url(../images/logos/question-mark.jpg)no-repeat center/$primary-bg-size,
@@ -762,8 +876,8 @@ footer {
 // general containers
 
 .content-section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .container.first {
@@ -903,5 +1017,56 @@ footer {
   background-color: white;
 }
 #nec-intel-lenovo-modal .modal-content{
+  background-color: white;
+}
+#terrada-modal .modal-content{
+  background-color: white;
+}
+#stratasys-modal .modal-content{
+  background-color: white;
+}
+#makerbot-modal .modal-content{
+  background-color: white;
+}
+#tmcn-modal .modal-content{
+  background-color: white;
+}
+#trotec-modal .modal-content{
+  background-color: white;
+}
+#gausstoys-modal .modal-content{
+  background-color: white;
+}
+#accenture-modal .modal-content{
+  background-color: white;
+}
+#cerevo-modal .modal-content{
+  background-color: white;
+}
+#docomo-modal .modal-content{
+  background-color: white;
+}
+#ibm-modal .modal-content{
+  background-color: white;
+}
+#makuake-modal .modal-content{
+  background-color: white;
+}
+#quantum-modal .modal-content{
+  background-color: white;
+}
+#raksul-modal .modal-content{
+  background-color: white;
+}
+#happyprinters-modal .modal-content{
+  background-color: white;
+}
+#pizzahut-modal .modal-content{
+  background-color: white;
+}
+#fabcafe-modal .modal-content{
+  background-color: white;
+}
+#reaktor-modal .modal-content{
   background-color: white;
 }
