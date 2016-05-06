@@ -542,6 +542,12 @@ $apply-color-hover: #EFEA3A;
   height: 300px;
 }
 
+.surroundinga{
+  background-color: #0f0e0c;
+  width: 200px;
+  height: 300px;
+}
+
 /*TRACKS*/
 
 .track-box{
@@ -663,7 +669,7 @@ $apply-color-hover: #EFEA3A;
       linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
   }
   &.pizzahut {
-    width: 20px;
+    width: 260px;
     height: 100.5px;
     background: url(../images/logos/pizza.png)no-repeat center/$primary-bg-size,
       linear-gradient(#0f0e0c, #0f0e0c) center/$secondary-bg-size no-repeat;
